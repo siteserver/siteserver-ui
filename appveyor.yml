@@ -17,6 +17,9 @@
 
   skip_tags: true
 
+  cache:
+    - node_modules                        # local npm modules
+
   after_build:
     - gulp build
     - nuget pack SiteServer.UI.nuspec
@@ -44,7 +47,7 @@
     only:
       - dev
 
-  version: 1.0.{build}
+  version: 1.0.{build}-beta
 
   environment:
     nodejs_version: "6"
@@ -57,9 +60,12 @@
 
   skip_tags: true
 
+  cache:
+    - node_modules                        # local npm modules
+
   after_build:
     - gulp build
-    - nuget pack assets/SiteServer.UI.nuspec
+    - nuget pack build/SiteServer.UI.nuspec
 
   artifacts:
     - path: '*.nupkg'

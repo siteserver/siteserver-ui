@@ -42,3 +42,8 @@ Sass是一种CSS预处理器，它扩展了CSS语言，添加了允许变量、�
 | style.scss    | sass版本样式文件                               |
 | style.css     | css版本样式文件                                |
 | style.min.css | css压缩版本样式文件，生产环境使用              |
+
+### 编译
+
+rm -rf build
+APPVEYOR_BUILD_VERSION=1.0.1 gulp build

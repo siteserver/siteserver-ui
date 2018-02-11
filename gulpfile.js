@@ -11,10 +11,10 @@ gulp.task('build', function () {
 
   console.log('build SiteServer.UI started, version: ' + version);
 
-  gulp.src('./SiteServer.UI.nuspec').pipe(replace('$version$', version)).pipe(gulp.dest('./assets'));
+  gulp.src('./SiteServer.UI.nuspec').pipe(replace('$version$', version)).pipe(gulp.dest('./build'));
 
   gulp.src('./src/scss/*.scss').pipe(sass().on('error', sass.logError)).pipe(gulp.dest('./src/css'));
-  gulp.src('./src/css/siteserver.css').pipe(gulp.dest('./assets/css'));
+  gulp.src('./src/css/siteserver.css').pipe(gulp.dest('./build/assets/css'));
   gulp.src('./src/css/siteserver.css').pipe(minify({
     minify: true,
     collapseWhitespace: true,
@@ -22,13 +22,13 @@ gulp.task('build', function () {
     minifyJS: false,
     minifyCSS: true,
     minifyHTML: false
-  })).pipe(rename('siteserver.min.css')).pipe(gulp.dest('./assets/css'));
+  })).pipe(rename('siteserver.min.css')).pipe(gulp.dest('./build/assets/css'));
 
-  gulp.src('./src/fonts/**').pipe(gulp.dest('./assets/fonts'));
+  gulp.src('./src/fonts/**').pipe(gulp.dest('./build/assets/fonts'));
 
-  gulp.src('./src/js/**').pipe(gulp.dest('./assets/js'));
+  gulp.src('./src/js/**').pipe(gulp.dest('./build/assets/js'));
 
-  gulp.src('./src/lib/**').pipe(gulp.dest('./assets/css'));
+  gulp.src('./src/lib/**').pipe(gulp.dest('./build/assets/css'));
 
   console.log('build SiteServer.UI successed!');
 });
