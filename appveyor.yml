@@ -11,7 +11,7 @@ before_build:
   - node --version
   - npm --version
 
-build:
+after_build:
   - gulp build
 
 cache:
