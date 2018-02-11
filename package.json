@@ -1,0 +1,22 @@
+{
+  "name": "siteserver-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-replace": "^0.5.4",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-all": "^0.9.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minifier": "^0.1.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
