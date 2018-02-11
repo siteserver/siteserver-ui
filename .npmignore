@@ -1,0 +1,8 @@
+.vscode/
+docs/
+node_modules/
+src/
+.gitignore
+.npmignore
+appveyor.yml
+gulpfile.js

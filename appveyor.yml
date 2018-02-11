@@ -1,85 +1,31 @@
-# configuration for "master" branch
--
-  branches:
-    only:
-      - master
+environment:
+  matrix:
+    - nodejs_version: STABLE
+      configuration: publish
+    - nodejs_version: LTS
 
-  version: 1.0.{build}
+install:
+  - ps: Install-Product node $env:nodejs_version
 
-  environment:
-    nodejs_version: "6"
-    TreatWarningsAsErrors: false
+before_build:
+  # Output useful info for debugging.
+  - node --version
+  - npm --version
+  - gulp build
 
-  install:
-    - ps: Install-Product node $env:nodejs_version
-    - npm install gulp -g
-    - npm install
+cache:
+  - node_modules -> package.json
+  - '%APPDATA%\npm-cache'
 
-  skip_tags: true
+test: off
 
-  cache:
-    - node_modules                        # local npm modules
-
-  after_build:
-    - gulp build
-    - nuget pack SiteServer.UI.nuspec
-
-  artifacts:
-    - path: '*.nupkg'
-
-  deploy:
-    - provider: NuGet
-      server:                  # remove to push to NuGet.org
-      api_key:
-        secure: cKpWZvlfFA7EfagAXc/mZfTGHXxfoKNOYTQd6v4ImalbNV1mtNR55M2HMJJ4jCAo
-      skip_symbols: false
-      symbol_server:           # remove to push symbols to SymbolSource.org
-      artifact: /.*\.nupkg/
-
-  notifications:
-    - provider: GitHubPullRequest
-      on_build_success: true
-      on_build_failure: true
-
-# configuration for "dev" branch
--
-  branches:
-    only:
-      - dev
-
-  version: 1.0.{build}-beta
-
-  environment:
-    nodejs_version: "6"
-    TreatWarningsAsErrors: false
-
-  install:
-    - ps: Install-Product node $env:nodejs_version
-    - npm install gulp -g
-    - npm install
-
-  skip_tags: true
-
-  cache:
-    - node_modules                        # local npm modules
-
-  after_build:
-    - gulp build
-    - nuget pack build/SiteServer.UI.nuspec
-
-  artifacts:
-    - path: '*.nupkg'
-
-  deploy:
-    - provider: NuGet
-      server: https://www.myget.org/F/siteserver/api/v2/package                 # remove to push to NuGet.org
-      api_key:
-        secure: i9vISdFyCeWbRUQw+jhcF748i4oWdeatGBrx+dJ07SDTpt7Hsk9YCRp/ha3ZXfZF
-      skip_symbols: false
-      symbol_server:           # remove to push symbols to SymbolSource.org
-      artifact: /.*\.nupkg/
-
-  notifications:
-    - provider: GitHubPullRequest
-      on_build_success: true
-      on_build_failure: true
+deploy_script:
+  - ps: |
+      if ($ENV:CONFIGURATION -eq "publish")
+      {
+        "//registry.npmjs.org/:_authToken=`$`{NPM_TOKEN`}" | Out-File (Join-Path $ENV:APPVEYOR_BUILD_FOLDER ".npmrc") -Encoding UTF8
+        iex "npm pack"
+        iex "npm publish"
+      }
+    on:
+      branch: master
