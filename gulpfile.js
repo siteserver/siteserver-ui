@@ -26,5 +26,7 @@ gulp.task('build', function () {
 
   gulp.src('./src/lib/**').pipe(gulp.dest('./dist/css'));
 
+  gulp.src('./package.json').pipe(replace('$version$', version)).pipe(gulp.dest('./'));
+
   console.log('build SiteServer.UI successed!');
 });
