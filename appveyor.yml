@@ -17,7 +17,7 @@
 
   skip_tags: true
 
-  build:
+  after_build:
     - gulp build
     - nuget pack SiteServer.UI.nuspec
 
@@ -57,7 +57,7 @@
 
   skip_tags: true
 
-  build:
+  after_build:
     - gulp build
     - nuget pack assets/SiteServer.UI.nuspec
 
