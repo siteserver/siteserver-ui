@@ -13,7 +13,4 @@
     <copyright>Copyright © SiteServer CMS 2018</copyright>
     <tags>SiteServer CMS UI</tags>
   </metadata>
-  <files>
-    <file src="assets\**" target="Content\assets"/>
-  </files>
 </package>
