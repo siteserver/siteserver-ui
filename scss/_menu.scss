@@ -341,12 +341,12 @@
       vertical-align: top;
     }
     .navigation-menu > li .submenu > li.has-submenu > a:after {
-      content: "\e649";
-      font-family: "themify";
+      content: "\f3d3";
+      font-family: 'Ionicons';
       position: absolute;
       right: 20px;
-      top: 13px;
-      font-size: 10px;
+      font-size: 16px;
+      top: 8px;
     }
     .navigation-menu > li .submenu > li .submenu {
       left: 100%;
@@ -442,11 +442,12 @@
       color: $primary;
     }
     .navigation-menu > li .submenu li.has-submenu > a:after {
-      content: "\e64b";
-      font-family: "themify";
+      content: "\f3d3";
+      font-family: 'Ionicons';
       position: absolute;
-      right: 30px;
-      font-size: 10px;
+      right: 20px;
+      font-size: 16px;
+      top: 8px;
     }
     .navigation-menu > li .submenu.open {
       display: block;

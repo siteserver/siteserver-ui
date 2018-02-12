@@ -161,8 +161,8 @@ div#datatable-buttons_info {
     }
     input[type="checkbox"]:checked + label {
       &::after {
-        content: "\f00c";
-        font-family: 'FontAwesome';
+        content: "\f122";
+        font-family: "Ionicons";
       }
     }
     input[type="checkbox"]:disabled + label {
@@ -298,19 +298,6 @@ div#datatable-buttons_info {
 
 .tablesaw-stack tbody tr, .tablesaw tbody tr {
   border-bottom: none;
-}
-
-.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-ascending button:after, .tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-descending button:after {
-  font-family: FontAwesome;
-  font-size: 10px;
-}
-
-.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-ascending button:after {
-  content: "\f176";
-}
-
-.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-descending button:after {
-  content: "\f175";
 }
 
 .tablesaw-bar .btn-select.btn-small:after, .tablesaw-bar .btn-select.btn-micro:after {

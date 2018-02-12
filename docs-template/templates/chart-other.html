@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!-- #include file="header.html" -->
+
+
+  <div class="container-fluid">
+
+    <!-- Page-Title -->
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="page-title-box">
+          <div class="btn-group float-right">
+            <ol class="breadcrumb hide-phone p-0 m-0">
+              <li class="breadcrumb-item">
+                <a href="#">SiteServer</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Charts</a>
+              </li>
+              <li class="breadcrumb-item active">Other Charts</li>
+            </ol>
+          </div>
+          <h4 class="page-title">Other Charts</h4>
+        </div>
+      </div>
+    </div>
+    <!-- end page title end breadcrumb -->
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card-box">
+          <h4 class="m-t-0 header-title">
+            <b>Jquery Knob</b>
+          </h4>
+          <p class="text-muted m-b-30 font-13">
+            Your awesome text goes here.
+          </p>
+
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="m-b-25">
+                <input class="knob" data-width="150" data-height="150" data-fgColor="#ef5350" data-displayInput=false value="35" />
+                <h6 class="font-600 text-muted">Disable display input</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="m-b-25">
+                <input class="knob" data-width="150" data-height="150" data-cursor=true data-fgColor="#52bb56" value="29" />
+                <h6 class="font-600 text-muted">Cursor mode</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="m-b-25">
+                <input class="knob" data-width="150" data-height="150" data-min="-100" data-fgColor="#f1b53d" data-displayPrevious=true value="44"
+                />
+                <h6 class="font-600 text-muted">Display previous value</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="m-b-25">
+                <input class="knob" data-width="150" data-height="150" data-min="-100" data-fgColor="#039cfd" data-displayPrevious=true data-angleOffset=-125
+                  data-angleArc=250 value="44" />
+                <h6 class="font-600 text-muted">Angle offset and arc</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="p-20">
+                <input class="knob" data-width="150" data-height="150" data-angleOffset="90" data-linecap="round" data-fgColor="#67d1f8"
+                  value="35" />
+                <h6 class="font-600 text-muted">Angle offset</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="p-20">
+                <input class="knob" data-width="150" data-height="150" data-min="-15000" data-displayPrevious=true data-max="15000" data-step="1000"
+                  value="-11000" data-fgColor="#7266ba" />
+                <h6 class="font-600 text-muted">5-digit values, step 1000</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="p-20">
+                <input class="knob" data-width="150" data-height="150" data-linecap=round data-fgColor="#f76397" value="80" data-skin="tron"
+                  data-angleOffset="180" data-readOnly=true data-thickness=".1" />
+                <h6 class="font-600 text-muted">Readonly</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 text-center">
+              <div class="p-20">
+                <input class="knob" data-width="150" data-height="150" data-displayPrevious=true data-fgColor="#4c5667" data-skin="tron"
+                  data-cursor=true value="75" data-thickness=".2" data-angleOffset=-125 data-angleArc=250 value="44" />
+                <h6 class="font-600 text-muted">Angle offset and arc</h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End row -->
+
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="card-box">
+          <h4 class="m-t-0 header-title">
+            <b>Easy Pie Chart</b>
+          </h4>
+          <p class="text-muted m-b-30 font-13">
+            Your awesome text goes here.
+          </p>
+
+          <div class="row text-center">
+            <div class="col-sm-6 col-lg-3">
+              <div class="chart easy-pie-chart-1" data-percent="86">
+                <span class="percent">Nice</span>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="chart easy-pie-chart-2" data-percent="86">
+                <span class="percent"></span>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="chart easy-pie-chart-3" data-percent="86">
+                <span class="percent"></span>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="chart easy-pie-chart-4" data-percent="56">
+                <span class="percent"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- End row -->
+
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="card-box">
+          <h4 class="m-t-0 header-title">
+            <b>Circliful Charts</b>
+          </h4>
+          <p class="text-muted m-b-30 font-13">
+            Your awesome text goes here.
+          </p>
+
+          <div class="row text-center">
+            <div class="col-sm-6 col-lg-3">
+              <div class="circliful-chart m-b-30" data-dimension="180" data-text="35%" data-info="New Clients" data-width="20" data-fontsize="24"
+                data-percent="35" data-fgcolor="#5fbeaa" data-bgcolor="#ebeff2" data-fill="#f4f8fb"></div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="circliful-chart m-b-30" data-dimension="180" data-text="35%" data-info="New Clients" data-width="30" data-fontsize="24"
+                data-percent="35" data-fgcolor="#7266ba" data-bgcolor="#ebeff2"></div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="circliful-chart m-b-30" data-startdegree="90" data-dimension="180" data-text="35%" data-info="New Clients" data-width="30"
+                data-fontsize="24" data-percent="35" data-fgcolor="#61a9dc" data-bgcolor="#ebeff2"></div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="circliful-chart m-b-30" data-startdegree="180" data-dimension="180" data-text="35%" data-info="New Clients" data-width="30"
+                data-fontsize="24" data-percent="35" data-fgcolor="#4c5667" data-bgcolor="#ebeff2"></div>
+            </div>
+
+          </div>
+
+
+          <div class="row text-center">
+            <div class="col-sm-6 col-lg-3">
+              <div class="circliful-chart" data-dimension="200" data-text="35%" data-info="New Clients" data-width="30" data-fontsize="24"
+                data-percent="35" data-fgcolor="#34d3eb" data-bgcolor="#ebeff2" data-type="half" data-fill="#f4f8fb"></div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="circliful-chart" data-dimension="200" data-text="" data-info="New Clients" data-width="30" data-fontsize="24"
+                data-percent="35" data-fgcolor="#ffbd4a" data-bgcolor="#ebeff2" data-type="half" data-icon="fa-bed"></div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="circliful-chart" data-startdegree="45" data-dimension="200" data-text="50%" data-info="New Clients" data-width="30"
+                data-fontsize="24" data-percent="50" data-fgcolor="#fb6d9d" data-bgcolor="#ebeff2" data-type="half" data-fill="#f4f8fb"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- End row -->
+
+  </div>
+  <!-- end container -->
+
+
+  <!-- #include file="footer.html" -->
+
+</body>
+
+</html>

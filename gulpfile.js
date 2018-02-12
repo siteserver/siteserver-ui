@@ -1,5 +1,6 @@
 'use strict';
 
+var fs = require('fs');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -32,10 +33,16 @@ gulp.task('build-fonts', function () {
   return gulp.src('./fonts/**').pipe(gulp.dest('./dist/fonts'));
 });
 
-gulp.task('build-docs', function () {
-  gulp.src('./dist/**').pipe(gulp.dest('./docs/assets'));
+gulp.task('build-docs-assets', function () {
+  return gulp.src('./dist/**').pipe(gulp.dest('./docs/assets'));
+});
+
+gulp.task('build-docs-replace', function () {
+  fs.readFile('./docs-template/include/header.html', 'utf8', function(err, contents) {
+    gulp.src('./docs-template/templates/*.html').pipe(replace('<!-- #include file="header.html" -->', contents)).pipe(gulp.dest('./docs'));
+  });
 });
 
 gulp.task('build', function (callback) {
-  runSequence('build-clean', 'build-css', 'build-min', 'build-fonts', 'build-docs', callback);
+  runSequence('build-clean', 'build-css', 'build-min', 'build-fonts', 'build-docs-assets', 'build-docs-replace', callback);
 });
