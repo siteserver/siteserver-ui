@@ -1301,7 +1301,7 @@ code, pre {
    Print css
 ============= */
 @media print {
-  .logo, .breadcrumb, .page-title, .footer, .topbar, .btn-group.pull-right.m-t-15, #topnav {
+  .logo, .breadcrumb, .page-title, .footer, .topbar, .btn-group.float-right.m-t-15, #topnav {
     display: none;
     margin: 0;
     padding: 0; }
@@ -3099,9 +3099,9 @@ div#datatable-buttons_info {
 .table-rep-plugin .btn-toolbar {
   display: block; }
 
-.table-rep-plugin .btn-group.pull-right {
+.table-rep-plugin .btn-group.float-right {
   float: right; }
-  .table-rep-plugin .btn-group.pull-right .dropdown-menu {
+  .table-rep-plugin .btn-group.float-right .dropdown-menu {
     left: auto;
     right: 0; }
 
