@@ -1,7 +1,8 @@
 .vscode/
 docs/
+fonts/
 node_modules/
-src/
+scss/
 .gitignore
 .npmignore
 gulpfile.js

@@ -14,24 +14,28 @@ gulp.task('build-clean', function () {
 });
 
 gulp.task('build-css', function () {
-  return gulp.src('./src/*.scss').pipe(sourcemaps.init()).pipe(sass().on('error', sass.logError)).pipe(sourcemaps.write()).pipe(gulp.dest('./dist'));
+  return gulp.src('./scss/*.scss').pipe(sourcemaps.init()).pipe(sass().on('error', sass.logError)).pipe(sourcemaps.write()).pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('build-min', function () {
-  return gulp.src('./dist/siteserver.css').pipe(minify({
+  return gulp.src('./dist/css/siteserver.css').pipe(minify({
     minify: true,
     collapseWhitespace: true,
     conservativeCollapse: true,
     minifyJS: false,
     minifyCSS: true,
     minifyHTML: false
-  })).pipe(rename('siteserver.min.css')).pipe(gulp.dest('./dist'));
+  })).pipe(rename('siteserver.min.css')).pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('build-fonts', function () {
+  return gulp.src('./fonts/**').pipe(gulp.dest('./dist/fonts'));
 });
 
 gulp.task('build-docs', function () {
-  gulp.src('./dist/**').pipe(gulp.dest('./docs/assets/css'));
+  gulp.src('./dist/**').pipe(gulp.dest('./docs/assets'));
 });
 
 gulp.task('build', function (callback) {
-  runSequence('build-clean', 'build-css', 'build-min', 'build-docs', callback);
+  runSequence('build-clean', 'build-css', 'build-min', 'build-fonts', 'build-docs', callback);
 });
