@@ -12,7 +12,7 @@ before_build:
   - npm --version
 
 build_script:
-  - ./build.cmd
+  - gulp build
 
 cache:
   - node_modules -> package.json
