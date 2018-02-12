@@ -7,8 +7,6 @@ install:
   - npm install
   - gulp build
 
-test: off
-
 build: off
 
 cache:
