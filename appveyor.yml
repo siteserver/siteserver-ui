@@ -5,9 +5,9 @@ install:
   - ps: Install-Product node $env:nodejs_version
   - npm install -g gulp
   - npm install
-
-test:
   - gulp build
+
+test: off
 
 build: off
 
