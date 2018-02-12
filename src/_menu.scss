@@ -1,9 +1,6 @@
 /* ===========
    Menu
  =============*/
-.wrapper {
-  padding-top: 120px;
-}
 
 .page-title-box {
   padding: 22px 0;
@@ -17,11 +14,6 @@
 }
 
 #topnav {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 1030;
   background-color: transparent;
   border: 0;
   -webkit-transition: all .5s ease;
@@ -410,9 +402,6 @@
 
 }
 @media (max-width: 991px) {
-  .wrapper {
-    padding-top: 60px;
-  }
   .container {
     width: auto !important;
   }

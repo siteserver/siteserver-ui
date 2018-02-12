@@ -1,98 +1,95 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-        <meta content="Coderthemes" name="author" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+<head>
+  <meta charset="utf-8" />
+  <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <script src="assets/js/modernizr.min.js"></script>
+  <!-- App css -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
 
-    </head>
-    <body>
+</head>
 
-        <div class="wrapper-page">
+<body>
 
-            <div class="text-center">
-                <a href="index.html" class="logo-lg"><i class="mdi mdi-radar"></i> <span>SiteServer</span> </a>
-            </div>
+  <div class="wrapper-page">
 
-            <form class="form-horizontal m-t-20" action="index.html">
+    <div class="text-center">
+      <a href="index.html" class="logo-lg">
+        <i class="mdi mdi-radar"></i>
+        <span>SiteServer</span>
+      </a>
+    </div>
 
-                <div class="form-group row">
-                    <div class="col-12">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="mdi mdi-email"></i></span>
-                            <input class="form-control" type="email" required="" placeholder="Email">
-                        </div>
-                    </div>
-                </div>
+    <form class="form-horizontal m-t-20" action="index.html">
 
-                <div class="form-group row">
-                    <div class="col-12">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="mdi mdi-account"></i></span>
-                            <input class="form-control" type="text" required="" placeholder="Username">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-12">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="mdi mdi-key"></i></span>
-                            <input class="form-control" type="password" required="" placeholder="Password">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-12">
-                        <div class="checkbox checkbox-primary">
-                            <input id="checkbox-signup" type="checkbox" checked="checked">
-                            <label for="checkbox-signup">
-                                I accept <a href="#">Terms and Conditions</a>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group text-right m-t-20">
-                    <div class="col-xs-12">
-                        <button class="btn btn-primary btn-custom waves-effect waves-light w-md" type="submit">Register</button>
-                    </div>
-                </div>
-
-                <div class="form-group row m-t-30">
-                    <div class="col-12 text-center">
-                        <a href="pages-login.html" class="text-muted">Already have account?</a>
-                    </div>
-                </div>
-
-            </form>
+      <div class="form-group row">
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <i class="mdi mdi-email"></i>
+            </span>
+            <input class="form-control" type="email" required="" placeholder="Email">
+          </div>
         </div>
+      </div>
 
+      <div class="form-group row">
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <i class="mdi mdi-account"></i>
+            </span>
+            <input class="form-control" type="text" required="" placeholder="Username">
+          </div>
+        </div>
+      </div>
 
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap --><!-- Tether for Bootstrap -->
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/waves.js"></script>
-        <script src="assets/js/jquery.slimscroll.js"></script>
-        <script src="assets/js/jquery.scrollTo.min.js"></script>
+      <div class="form-group row">
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <i class="mdi mdi-key"></i>
+            </span>
+            <input class="form-control" type="password" required="" placeholder="Password">
+          </div>
+        </div>
+      </div>
 
-        <!-- App js -->
-        <script src="assets/js/jquery.core.js"></script>
-        <script src="assets/js/jquery.app.js"></script>
+      <div class="form-group row">
+        <div class="col-12">
+          <div class="checkbox checkbox-primary">
+            <input id="checkbox-signup" type="checkbox" checked="checked">
+            <label for="checkbox-signup">
+              I accept
+              <a href="#">Terms and Conditions</a>
+            </label>
+          </div>
+        </div>
+      </div>
 
-    </body>
+      <div class="form-group text-right m-t-20">
+        <div class="col-xs-12">
+          <button class="btn btn-primary btn-custom waves-effect waves-light w-md" type="submit">Register</button>
+        </div>
+      </div>
+
+      <div class="form-group row m-t-30">
+        <div class="col-12 text-center">
+          <a href="pages-login.html" class="text-muted">Already have account?</a>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+
 </html>
