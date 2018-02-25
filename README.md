@@ -1,10 +1,39 @@
 # SiteServer.UI 用户界面UI库
 
+[![npm version](https://img.shields.io/npm/v/siteserver.svg?style=flat-square)](https://www.npmjs.org/package/siteserver)
+[![npm downloads](https://img.shields.io/npm/dm/siteserver.svg?style=flat-square)](http://npm-stat.com/charts.html?package=siteserver)
+
 SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。
 
 ## 介绍
 
 SiteServer.UI 是一个功能齐全的主题样式，包括各种实用组件，这些组件在任何页面上都可以很容易地使用，主题是完全响应和可定制的。
+
+## 浏览器支持
+
+![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) |
+--- | --- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 8+ ✔ |
+
+## 安装
+
+采用 npm:
+
+```bash
+$ npm install siteserver
+```
+
+采用 bower:
+
+```bash
+$ bower install siteserver
+```
+
+采用 cdn:
+
+```html
+<link href="https://unpkg.com/siteserver/dist/siteserver.min.css" rel="stylesheet" type="text/css" />
+```
 
 ## 代码结构
 
