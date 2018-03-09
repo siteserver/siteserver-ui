@@ -32,7 +32,17 @@ $ bower install siteserver
 采用 cdn:
 
 ```html
-<link href="https://unpkg.com/siteserver/dist/siteserver.min.css" rel="stylesheet" type="text/css" />
+<link href="https://unpkg.com/siteserver/dist/css/siteserver.min.css" rel="stylesheet" type="text/css" />
+```
+
+## 开始使用
+
+SiteServer.UI 基于[Bootstrap样式](getbootstrap.com)以及[ionicons图标集](https://github.com/ionic-team/ionicons)。首先引用Bootstrap，然后是ionicons，然后是我们的CSS。
+
+```html
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+<link href="css/siteserver.min.css" rel="stylesheet" type="text/css" />
 ```
 
 ## 代码结构
@@ -74,5 +84,6 @@ Sass是一种CSS预处理器，它扩展了CSS语言，添加了允许变量、�
 
 ### 编译
 
-rm -rf build
-APPVEYOR_BUILD_VERSION=1.0.1 gulp build
+gulp build
+
+编译后的文件存放于dist文件夹。
