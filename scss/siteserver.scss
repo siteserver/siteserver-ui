@@ -1,8 +1,16 @@
+/*
+Template Name: Minton - Bootstrap 4 Admin Dashboard
+Author: Coderthemes
+Email: coderthemes@gmail.com
+File: Main Css
+*/
+
 @import "variables";
 @import "menu";
 @import "common";
 @import "bootstrap-reset";
 @import "helper";
+@import "waves";
 @import "animation";
 @import "badge";
 @import "pagination";
@@ -30,6 +38,7 @@
 @import "email";
 @import "calendar";
 @import "timeline";
+@import "sweetalert";
 @import "notification";
 @import "nestable";
 @import "charts";
@@ -41,6 +50,3 @@
 @import "pricing";
 @import "faq";
 @import "responsive";
-@import "ionicons-variables";
-@import "ionicons-font";
-@import "ionicons-icons";

@@ -3,135 +3,133 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
+  <!-- #include file="head.html" -->
+
 </head>
 
 <body>
-
   <!-- #include file="header.html" -->
 
+  <div class="wrapper">
+    <div class="container-fluid">
 
-  <div class="container-fluid">
-
-    <!-- Page-Title -->
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-title-box">
-          <div class="btn-group float-right">
-            <ol class="breadcrumb hide-phone p-0 m-0">
-              <li class="breadcrumb-item">
-                <a href="#">SiteServer</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">UI Kit</a>
-              </li>
-              <li class="breadcrumb-item active">Grid System</li>
-            </ol>
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group float-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">SiteServer</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">UI Kit</a>
+                </li>
+                <li class="breadcrumb-item active">Grid System</li>
+              </ol>
+            </div>
+            <h4 class="page-title">Grid System</h4>
           </div>
-          <h4 class="page-title">Grid System</h4>
         </div>
       </div>
-    </div>
-    <!-- end page title end breadcrumb -->
+      <!-- end page title end breadcrumb -->
 
 
-    <div class="row">
-      <div class="col-12">
-        <div class="card-box">
-          <h4 class="header-title m-t-0">Grid options</h4>
-          <p class="text-muted m-b-20 font-13">
-            See how aspects of the Bootstrap grid system work across multiple devices with a handy table.
-          </p>
+      <div class="row">
+        <div class="col-12">
+          <div class="card-box">
+            <h4 class="header-title m-t-0">Grid options</h4>
+            <p class="text-muted m-b-20 font-13">
+              See how aspects of the Bootstrap grid system work across multiple devices with a handy table.
+            </p>
 
-          <table class="table table-bordered table-striped table-responsive">
-            <thead>
-              <tr>
-                <th></th>
-                <th class="text-center">
-                  Extra small
-                  <br>
-                  <small>&lt;576px</small>
-                </th>
-                <th class="text-center">
-                  Small
-                  <br>
-                  <small>≥576px</small>
-                </th>
-                <th class="text-center">
-                  Medium
-                  <br>
-                  <small>≥768px</small>
-                </th>
-                <th class="text-center">
-                  Large
-                  <br>
-                  <small>≥992px</small>
-                </th>
-                <th class="text-center">
-                  Extra large
-                  <br>
-                  <small>≥1200px</small>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th class="text-nowrap" scope="row">Max container width</th>
-                <td>None (auto)</td>
-                <td>540px</td>
-                <td>720px</td>
-                <td>960px</td>
-                <td>1140px</td>
-              </tr>
-              <tr>
-                <th class="text-nowrap" scope="row">Class prefix</th>
-                <td>
-                  <code>.col-</code>
-                </td>
-                <td>
-                  <code>.col-sm-</code>
-                </td>
-                <td>
-                  <code>.col-md-</code>
-                </td>
-                <td>
-                  <code>.col-lg-</code>
-                </td>
-                <td>
-                  <code>.col-xl-</code>
-                </td>
-              </tr>
-              <tr>
-                <th class="text-nowrap" scope="row"># of columns</th>
-                <td colspan="5">12</td>
-              </tr>
-              <tr>
-                <th class="text-nowrap" scope="row">Gutter width</th>
-                <td colspan="5">20px (10px on each side of a column)</td>
-              </tr>
-              <tr>
-                <th class="text-nowrap" scope="row">Nestable</th>
-                <td colspan="5">Yes</td>
-              </tr>
-              <tr>
-                <th class="text-nowrap" scope="row">Column ordering</th>
-                <td colspan="5">Yes</td>
-              </tr>
-            </tbody>
-          </table>
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="text-center">
+                      Extra small
+                      <br>
+                      <small>&lt;576px</small>
+                    </th>
+                    <th class="text-center">
+                      Small
+                      <br>
+                      <small>≥576px</small>
+                    </th>
+                    <th class="text-center">
+                      Medium
+                      <br>
+                      <small>≥768px</small>
+                    </th>
+                    <th class="text-center">
+                      Large
+                      <br>
+                      <small>≥992px</small>
+                    </th>
+                    <th class="text-center">
+                      Extra large
+                      <br>
+                      <small>≥1200px</small>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="text-nowrap" scope="row">Max container width</th>
+                    <td>None (auto)</td>
+                    <td>540px</td>
+                    <td>720px</td>
+                    <td>960px</td>
+                    <td>1140px</td>
+                  </tr>
+                  <tr>
+                    <th class="text-nowrap" scope="row">Class prefix</th>
+                    <td>
+                      <code>.col-</code>
+                    </td>
+                    <td>
+                      <code>.col-sm-</code>
+                    </td>
+                    <td>
+                      <code>.col-md-</code>
+                    </td>
+                    <td>
+                      <code>.col-lg-</code>
+                    </td>
+                    <td>
+                      <code>.col-xl-</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="text-nowrap" scope="row"># of columns</th>
+                    <td colspan="5">12</td>
+                  </tr>
+                  <tr>
+                    <th class="text-nowrap" scope="row">Gutter width</th>
+                    <td colspan="5">20px (10px on each side of a column)</td>
+                  </tr>
+                  <tr>
+                    <th class="text-nowrap" scope="row">Nestable</th>
+                    <td colspan="5">Yes</td>
+                  </tr>
+                  <tr>
+                    <th class="text-nowrap" scope="row">Column ordering</th>
+                    <td colspan="5">Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- end row -->
+      <!-- end row -->
 
+    </div>
+    <!-- end container -->
   </div>
-  <!-- end container -->
+  <!-- end wrapper -->
 
 
   <!-- #include file="footer.html" -->
@@ -139,3 +137,4 @@
 </body>
 
 </html>
+<!-- #include file="foot.html" -->

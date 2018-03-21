@@ -5,9 +5,9 @@ Modal
   .modal-dialog {
 
     .close {
-      top: -18px;
+      top: 0;
       position: absolute;
-      right: -18px;
+      right: 0;
       height: 36px;
       width: 36px;
       background-color: $dark;
@@ -16,6 +16,8 @@ Modal
       text-shadow: none;
       color: $white;
       border-radius: 50%;
+      padding: 0;
+      font-size: 18px;
     }
 
     .modal-title {
@@ -43,6 +45,7 @@ Modal
 
 .modal-full {
   width: 98%;
+  max-width: 100%;
 }
 
 /* Custom-modal */
@@ -54,7 +57,7 @@ Modal
 
   .close {
     position: absolute;
-    top: 14px;
+    top: 12px;
     right: 25px;
     color: $white;
     opacity: 0.5;

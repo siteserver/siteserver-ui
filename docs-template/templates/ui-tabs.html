@@ -3,208 +3,66 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
+  <!-- #include file="head.html" -->
 </head>
 
 <body>
-
   <!-- #include file="header.html" -->
 
+  <div class="wrapper">
+    <div class="container-fluid">
 
-  <div class="container-fluid">
-
-    <!-- Page-Title -->
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-title-box">
-          <div class="btn-group float-right">
-            <ol class="breadcrumb hide-phone p-0 m-0">
-              <li class="breadcrumb-item">
-                <a href="#">SiteServer</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">UI Kit</a>
-              </li>
-              <li class="breadcrumb-item active">Tabs & Accordions</li>
-            </ol>
-          </div>
-          <h4 class="page-title">Tabs & Accordions</h4>
-        </div>
-      </div>
-    </div>
-    <!-- end page title end breadcrumb -->
-
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card-box">
-          <h4 class="header-title m-t-0 m-b-30">Default Tabs</h4>
-
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a href="#home" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link active">
-                Profile
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#messages" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Messages
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Settings
-              </a>
-            </li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane fade" id="home">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group float-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">SiteServer</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">UI Kit</a>
+                </li>
+                <li class="breadcrumb-item active">Tabs & Accordions</li>
+              </ol>
             </div>
-            <div class="tab-pane fade show active" id="profile">
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </div>
-            <div class="tab-pane fade" id="messages">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-            </div>
-            <div class="tab-pane fade" id="settings">
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </div>
+            <h4 class="page-title">Tabs & Accordions</h4>
           </div>
         </div>
       </div>
-      <!-- end col -->
-
-      <div class="col-md-6">
-        <div class="card-box">
-          <h4 class="header-title m-t-0 m-b-30">Tabs Justified</h4>
-
-          <ul class="nav nav-pills navtab-bg nav-justified">
-            <li class="nav-item">
-              <a href="#home1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#profile1" data-toggle="tab" aria-expanded="true" class="nav-link active">
-                Profile
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#messages1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Messages
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#settings1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Settings
-              </a>
-            </li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane fade" id="home1">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-            </div>
-            <div class="tab-pane fade show active" id="profile1">
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </div>
-            <div class="tab-pane fade" id="messages1">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-            </div>
-            <div class="tab-pane fade" id="settings1">
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end col -->
-    </div>
-    <!-- end row -->
+      <!-- end page title end breadcrumb -->
 
 
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-box">
+            <h4 class="header-title m-t-0 m-b-30">Default Tabs</h4>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card-box">
-          <h4 class="header-title m-t-0 m-b-30">Tabs Vertical Left</h4>
-
-          <div class="tabs-vertical-env">
-            <ul class="nav tabs-vertical">
+            <ul class="nav nav-tabs">
               <li class="nav-item">
-                <a href="#v-home" class="nav-link" data-toggle="tab" aria-expanded="false">Home</a>
+                <a href="#home" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Home
+                </a>
               </li>
               <li class="nav-item">
-                <a href="#v-profile" class="nav-link active" data-toggle="tab" aria-expanded="true">Profile</a>
+                <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                  Profile
+                </a>
               </li>
               <li class="nav-item">
-                <a href="#v-messages" class="nav-link" data-toggle="tab" aria-expanded="false">Messages</a>
+                <a href="#messages" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Messages
+                </a>
               </li>
               <li class="nav-item">
-                <a href="#v-settings" class="nav-link" data-toggle="tab" aria-expanded="false">Settings</a>
+                <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Settings
+                </a>
               </li>
             </ul>
-
             <div class="tab-content">
-              <div class="tab-pane" id="v-home">
+              <div class="tab-pane fade" id="home">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
                   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
                   ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
@@ -213,7 +71,7 @@
                   Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
                   vitae, eleifend ac, enim.</p>
               </div>
-              <div class="tab-pane active" id="v-profile">
+              <div class="tab-pane fade show active" id="profile">
                 <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
                   a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
                   Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
@@ -222,7 +80,7 @@
                   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
                   ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
               </div>
-              <div class="tab-pane" id="v-messages">
+              <div class="tab-pane fade" id="messages">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
                   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
                   ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
@@ -231,7 +89,7 @@
                   Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
                   vitae, eleifend ac, enim.</p>
               </div>
-              <div class="tab-pane" id="v-settings">
+              <div class="tab-pane fade" id="settings">
                 <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
                   a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
                   Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
@@ -243,300 +101,437 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- end col -->
+        <!-- end col -->
 
-      <div class="col-md-6">
-        <div class="card-box">
-          <h4 class="header-title m-t-0 m-b-30">Tabs Vertical Right</h4>
+        <div class="col-md-6">
+          <div class="card-box">
+            <h4 class="header-title m-t-0 m-b-30">Tabs Justified</h4>
 
-          <div class="tabs-vertical-env tabs-vertical-env-right">
-            <div class="tab-content">
-              <div class="tab-pane active" id="v2-home">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                  vitae, eleifend ac, enim.</p>
-              </div>
-              <div class="tab-pane" id="v2-profile">
-                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                  vitae, eleifend ac, enim.</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              </div>
-              <div class="tab-pane" id="v2-messages">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                  vitae, eleifend ac, enim.</p>
-              </div>
-              <div class="tab-pane" id="v2-settings">
-                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                  vitae, eleifend ac, enim.</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              </div>
-            </div>
-            <ul class="nav tabs-vertical">
+            <ul class="nav nav-pills navtab-bg nav-justified">
               <li class="nav-item">
-                <a href="#v2-home" class="nav-link active" data-toggle="tab">Home</a>
+                <a href="#home1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Home
+                </a>
               </li>
               <li class="nav-item">
-                <a href="#v2-profile" class="nav-link" data-toggle="tab">Profile</a>
+                <a href="#profile1" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                  Profile
+                </a>
               </li>
               <li class="nav-item">
-                <a href="#v2-messages" class="nav-link" data-toggle="tab">Messages</a>
+                <a href="#messages1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Messages
+                </a>
               </li>
               <li class="nav-item">
-                <a href="#v2-settings" class="nav-link" data-toggle="tab">Settings</a>
+                <a href="#settings1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Settings
+                </a>
               </li>
             </ul>
-          </div>
-
-        </div>
-      </div>
-      <!-- end col -->
-    </div>
-    <!-- end row -->
-
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card-box">
-          <h4 class="header-title m-t-0 m-b-30">Tabs Bordered</h4>
-
-          <ul class="nav nav-tabs tabs-bordered">
-            <li class="nav-item">
-              <a href="#home-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#profile-b1" data-toggle="tab" aria-expanded="true" class="nav-link active">
-                Profile
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#messages-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Messages
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#settings-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Settings
-              </a>
-            </li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane fade" id="home-b1">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-            </div>
-            <div class="tab-pane fade show active" id="profile-b1">
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </div>
-            <div class="tab-pane fade" id="messages-b1">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-            </div>
-            <div class="tab-pane fade" id="settings-b1">
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end col -->
-
-      <div class="col-md-6">
-        <div class="card-box">
-          <h4 class="header-title m-t-0 m-b-30">Tabs Bordered Justified</h4>
-
-          <ul class="nav nav-tabs tabs-bordered nav-justified">
-            <li class="nav-item">
-              <a href="#home-b2" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#profile-b2" data-toggle="tab" aria-expanded="true" class="nav-link active">
-                Profile
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#messages-b2" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Messages
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#settings-b2" data-toggle="tab" aria-expanded="false" class="nav-link">
-                Settings
-              </a>
-            </li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane" id="home-b2">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-            </div>
-            <div class="tab-pane active" id="profile-b2">
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </div>
-            <div class="tab-pane" id="messages-b2">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-            </div>
-            <div class="tab-pane" id="settings-b2">
-              <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
-                a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                vitae, eleifend ac, enim.</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end col -->
-    </div>
-    <!-- end row -->
-
-    <div class="row">
-      <div class="col-lg-6">
-        <div id="accordion" role="tablist" aria-multiselectable="true" class="m-b-20">
-          <div class="card">
-            <div class="card-header" role="tab" id="headingOne">
-              <h5 class="mb-0 mt-0 font-16">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Collapsible Group Item #1
-                </a>
-              </h5>
-            </div>
-
-            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                haven't heard of them accusamus labore sustainable VHS.
+            <div class="tab-content">
+              <div class="tab-pane fade" id="home1">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" role="tab" id="headingTwo">
-              <h5 class="mb-0 mt-0 font-16">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Collapsible Group Item #2
-                </a>
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                haven't heard of them accusamus labore sustainable VHS.
+              <div class="tab-pane fade show active" id="profile1">
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" role="tab" id="headingThree">
-              <h5 class="mb-0 mt-0 font-16">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Collapsible Group Item #3
-                </a>
-              </h5>
-            </div>
-            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                haven't heard of them accusamus labore sustainable VHS.
+              <div class="tab-pane fade" id="messages1">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+              </div>
+              <div class="tab-pane fade" id="settings1">
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
               </div>
             </div>
           </div>
         </div>
+        <!-- end col -->
       </div>
-      <div class="col-lg-6">
-        <p>
-          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Link with href
-          </a>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
-            aria-controls="collapseExample">
-            Button with data-target
-          </button>
-        </p>
-        <div class="collapse show" id="collapseExample">
-          <div class="card card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,
-            craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      <!-- end row -->
+
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-box">
+            <h4 class="header-title m-t-0 m-b-30">Tabs Vertical Left</h4>
+
+            <div class="tabs-vertical-env">
+              <ul class="nav tabs-vertical">
+                <li class="nav-item">
+                  <a href="#v-home" class="nav-link" data-toggle="tab" aria-expanded="false">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#v-profile" class="nav-link active" data-toggle="tab" aria-expanded="true">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#v-messages" class="nav-link" data-toggle="tab" aria-expanded="false">Messages</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#v-settings" class="nav-link" data-toggle="tab" aria-expanded="false">Settings</a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane" id="v-home">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                  <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                    a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                    Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                    vitae, eleifend ac, enim.</p>
+                </div>
+                <div class="tab-pane active" id="v-profile">
+                  <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                    a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                    Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                    vitae, eleifend ac, enim.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+                <div class="tab-pane" id="v-messages">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                  <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                    a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                    Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                    vitae, eleifend ac, enim.</p>
+                </div>
+                <div class="tab-pane" id="v-settings">
+                  <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                    a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                    Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                    vitae, eleifend ac, enim.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+
+        <div class="col-md-6">
+          <div class="card-box">
+            <h4 class="header-title m-t-0 m-b-30">Tabs Vertical Right</h4>
+
+            <div class="tabs-vertical-env tabs-vertical-env-right">
+              <div class="tab-content">
+                <div class="tab-pane active" id="v2-home">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                  <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                    a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                    Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                    vitae, eleifend ac, enim.</p>
+                </div>
+                <div class="tab-pane" id="v2-profile">
+                  <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                    a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                    Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                    vitae, eleifend ac, enim.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+                <div class="tab-pane" id="v2-messages">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                  <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                    a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                    Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                    vitae, eleifend ac, enim.</p>
+                </div>
+                <div class="tab-pane" id="v2-settings">
+                  <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                    a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                    Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                    vitae, eleifend ac, enim.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+              </div>
+              <ul class="nav tabs-vertical">
+                <li class="nav-item">
+                  <a href="#v2-home" class="nav-link active" data-toggle="tab">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#v2-profile" class="nav-link" data-toggle="tab">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#v2-messages" class="nav-link" data-toggle="tab">Messages</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#v2-settings" class="nav-link" data-toggle="tab">Settings</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- end row -->
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-box">
+            <h4 class="header-title m-t-0 m-b-30">Tabs Bordered</h4>
+
+            <ul class="nav nav-tabs tabs-bordered">
+              <li class="nav-item">
+                <a href="#home-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#profile-b1" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                  Profile
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#messages-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Messages
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#settings-b1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Settings
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade" id="home-b1">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+              </div>
+              <div class="tab-pane fade show active" id="profile-b1">
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+              </div>
+              <div class="tab-pane fade" id="messages-b1">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+              </div>
+              <div class="tab-pane fade" id="settings-b1">
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+
+        <div class="col-md-6">
+          <div class="card-box">
+            <h4 class="header-title m-t-0 m-b-30">Tabs Bordered Justified</h4>
+
+            <ul class="nav nav-tabs tabs-bordered nav-justified">
+              <li class="nav-item">
+                <a href="#home-b2" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#profile-b2" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                  Profile
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#messages-b2" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Messages
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#settings-b2" data-toggle="tab" aria-expanded="false" class="nav-link">
+                  Settings
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane" id="home-b2">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+              </div>
+              <div class="tab-pane active" id="profile-b2">
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+              </div>
+              <div class="tab-pane" id="messages-b2">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+              </div>
+              <div class="tab-pane" id="settings-b2">
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                  a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+                  vitae, eleifend ac, enim.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- end row -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div id="accordion" role="tablist" aria-multiselectable="true" class="m-b-20">
+            <div class="card">
+              <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0 mt-0 font-16">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Collapsible Group Item #1
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                  vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                  haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingTwo">
+                <h5 class="mb-0 mt-0 font-16">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Collapsible Group Item #2
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                  vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                  haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingThree">
+                <h5 class="mb-0 mt-0 font-16">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                  helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                  vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                  haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+              aria-controls="collapseExample">
+              Button with data-target
+            </button>
+          </p>
+          <div class="collapse show" id="collapseExample">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
           </div>
         </div>
       </div>
+      <!-- end row -->
+
+
     </div>
-    <!-- end row -->
-
-
+    <!-- end container -->
   </div>
-  <!-- end container -->
+  <!-- end wrapper -->
 
 
   <!-- #include file="footer.html" -->
@@ -544,3 +539,4 @@
 </body>
 
 </html>
+<!-- #include file="foot.html" -->

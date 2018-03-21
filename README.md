@@ -32,7 +32,7 @@ $ bower install siteserver
 采用 cdn:
 
 ```html
-<link href="https://unpkg.com/siteserver/dist/css/siteserver.min.css" rel="stylesheet" type="text/css" />
+<link href="https://unpkg.com/siteserver/dist/siteserver.min.css" rel="stylesheet" type="text/css" />
 ```
 
 ## 开始使用

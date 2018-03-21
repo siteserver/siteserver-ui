@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="shortcut icon" href="assets/images/favicon.png">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/siteserver.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
   <!-- Navigation Bar-->
 <header id="topnav">
   <div class="topbar-main">
@@ -21,23 +21,13 @@
 
       <!-- Logo container-->
       <div class="logo">
-        <!-- Text Logo -->
-        <a href="index.html" class="logo">
-          <span class="logo-small">
-            <i class="mdi mdi-radar"></i>
-          </span>
-          <span class="logo-large">
-            <i class="mdi mdi-radar"></i> SiteServer</span>
-        </a>
         <!-- Image Logo -->
-        <!--<a href="index.html" class="logo">-->
-        <!--<img src="assets/images/logo_dark.png" alt="" height="24" class="logo-lg">-->
-        <!--<img src="assets/images/logo_sm.png" alt="" height="24" class="logo-sm">-->
-        <!--</a>-->
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo_dark.png" alt="" class="logo-lg">
+        </a>
 
       </div>
       <!-- End Logo container-->
-
 
       <div class="menu-extras topbar-custom">
 
@@ -55,7 +45,7 @@
             <!-- End mobile menu toggle-->
           </li>
           <li class="list-inline-item dropdown notification-list">
-            <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
               aria-expanded="false">
               <i class="mdi mdi-bell noti-icon"></i>
               <span class="badge badge-pink noti-icon-badge">4</span>
@@ -107,7 +97,7 @@
           </li>
 
           <li class="list-inline-item dropdown notification-list">
-            <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+            <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
               aria-expanded="false">
               <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
             </a>
@@ -121,7 +111,7 @@
 
               <!-- item-->
               <a href="javascript:void(0);" class="dropdown-item notify-item">
-                <i class="mdi mdi-account-star-variant"></i>
+                <i class="mdi mdi-account"></i>
                 <span>Profile</span>
               </a>
 
@@ -201,9 +191,6 @@
               <li>
                 <a href="ui-typography.html">Typography</a>
               </li>
-              <li>
-                <a href="icons-ionicons.html">Icons</a>
-              </li>
             </ul>
           </li>
 
@@ -236,6 +223,26 @@
             <a href="#">
               <i class="ti-spray"></i>Other</a>
             <ul class="submenu">
+              <li class="has-submenu">
+                <a href="#">Icons</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="icons-materialdesign.html">Material Design</a>
+                  </li>
+                  <li>
+                    <a href="icons-themifyicon.html">Themify Icons</a>
+                  </li>
+                  <li>
+                    <a href="icons-ionicons.html">Ion Icons</a>
+                  </li>
+                  <li>
+                    <a href="icons-fontawesome.html">Font awesome</a>
+                  </li>
+                  <li>
+                    <a href="icons-weather.html">Weather Icons</a>
+                  </li>
+                </ul>
+              </li>
 
               <li class="has-submenu">
                 <a href="#">Forms</a>
@@ -248,6 +255,9 @@
                   </li>
                   <li>
                     <a href="form-validation.html">Form Validation</a>
+                  </li>
+                  <li>
+                    <a href="form-wizard.html">Form Wizard</a>
                   </li>
                   <li>
                     <a href="form-wysiwig.html">WYSIWYG Editor</a>
@@ -314,6 +324,18 @@
                   </li>
                   <li>
                     <a href="chart-other.html">Other Chart</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="has-submenu">
+                <a href="#">Maps</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="map-google.html"> Google Map</a>
+                  </li>
+                  <li>
+                    <a href="map-vector.html"> Vector Map</a>
                   </li>
                 </ul>
               </li>
@@ -436,580 +458,589 @@
 </header>
 <!-- End Navigation Bar-->
 
+  <div class="wrapper">
+    <div class="container-fluid">
 
-  <div class="container-fluid">
-
-    <!-- Page-Title -->
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-title-box">
-          <div class="btn-group float-right">
-            <ol class="breadcrumb hide-phone p-0 m-0">
-              <li class="breadcrumb-item">
-                <a href="#">SiteServer</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">UI Kit</a>
-              </li>
-              <li class="breadcrumb-item active">Modals</li>
-            </ol>
-          </div>
-          <h4 class="page-title">Modals</h4>
-        </div>
-      </div>
-    </div>
-    <!-- end page title end breadcrumb -->
-
-
-    <!-- Bootstrap Modals -->
-    <div class="row">
-      <div class="col-12">
-        <div class="card-box">
-
-          <h4 class="header-title m-t-0 m-b-30">Bootstrap Modals (default)</h4>
-
-          <p class="text-muted m-b-15 font-13">
-            A rendered modal with header, body, and set of actions in the footer.
-          </p>
-
-          <!-- sample modal content -->
-          <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
-                </div>
-                <div class="modal-body">
-                  <h4>Text in a modal</h4>
-                  <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                  <hr>
-                  <h4>Overflowing text to show scroll behavior</h4>
-                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-                    quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
-                    laoreet rutrum faucibus dolor auctor.</p>
-                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                    et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-                    quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
-                    laoreet rutrum faucibus dolor auctor.</p>
-                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                    et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-                    quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
-                    laoreet rutrum faucibus dolor auctor.</p>
-                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                    et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-              <!-- /.modal-content -->
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group float-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">SiteServer</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">UI Kit</a>
+                </li>
+                <li class="breadcrumb-item active">Modals</li>
+              </ol>
             </div>
-            <!-- /.modal-dialog -->
-          </div>
-          <!-- /.modal -->
-
-          <!--  Modal content for the above example -->
-          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
-            style="display: none;">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-              </div>
-              <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-          </div>
-          <!-- /.modal -->
-
-          <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"
-            style="display: none;">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-              </div>
-              <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-          </div>
-          <!-- /.modal -->
-
-          <div class="button-list">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Standard Modal</button>
-            <!-- Large modal -->
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
-            <!-- Small modal -->
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+            <h4 class="page-title">Modals</h4>
           </div>
         </div>
       </div>
-    </div>
+      <!-- end page title end breadcrumb -->
 
 
-    <!-- Custom Modals -->
-    <div class="row">
-      <div class="col-12">
-        <div class="card-box">
+      <!-- Bootstrap Modals -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card-box">
 
-          <h4 class="header-title m-t-0 m-b-30">Custom Modals</h4>
+            <h4 class="header-title m-t-0 m-b-30">Bootstrap Modals (default)</h4>
 
-          <p class="text-muted m-b-15 font-13">
-            Examples of custom modals.
-          </p>
+            <p class="text-muted m-b-15 font-13">
+              A rendered modal with header, body, and set of actions in the footer.
+            </p>
 
-          <!-- sample modal content -->
-
-          <div id="custom-width-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom-width-modalLabel" aria-hidden="true"
-            style="display: none;">
-            <div class="modal-dialog" style="width:55%;">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h4 class="modal-title" id="custom-width-modalLabel">Modal Heading</h4>
+            <!-- sample modal content -->
+            <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Text in a modal</h4>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                    <hr>
+                    <h4>Overflowing text to show scroll behavior</h4>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+                      quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+                      laoreet rutrum faucibus dolor auctor.</p>
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+                      quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+                      laoreet rutrum faucibus dolor auctor.</p>
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+                      quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+                      laoreet rutrum faucibus dolor auctor.</p>
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+                  </div>
                 </div>
-                <div class="modal-body">
-                  <h4>Text in a modal</h4>
-                  <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                  <hr>
-                  <h4>Overflowing text to show scroll behavior</h4>
-                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                    et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                <!-- /.modal-content -->
               </div>
-              <!-- /.modal-content -->
+              <!-- /.modal-dialog -->
             </div>
-            <!-- /.modal-dialog -->
-          </div>
-          <!-- /.modal -->
+            <!-- /.modal -->
 
-          <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="full-width-modalLabel" aria-hidden="true"
-            style="display: none;">
-            <div class="modal-dialog modal-full">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h4 class="modal-title" id="full-width-modalLabel">Modal Heading</h4>
+            <!--  Modal content for the above example -->
+            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+              style="display: none;">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
                 </div>
-                <div class="modal-body">
-                  <h4>Text in a modal</h4>
-                  <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                  <hr>
-                  <h4>Overflowing text to show scroll behavior</h4>
-                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                    et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                <!-- /.modal-content -->
               </div>
-              <!-- /.modal-content -->
+              <!-- /.modal-dialog -->
             </div>
-            <!-- /.modal-dialog -->
-          </div>
-          <!-- /.modal -->
+            <!-- /.modal -->
 
-          <div id="con-close-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-            style="display: none;">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h4 class="modal-title">Modal Content is Responsive</h4>
-                </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="field-1" class="control-label">Name</label>
-                        <input type="text" class="form-control" id="field-1" placeholder="John">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="field-2" class="control-label">Surname</label>
-                        <input type="text" class="form-control" id="field-2" placeholder="Doe">
-                      </div>
-                    </div>
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"
+              style="display: none;">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label for="field-3" class="control-label">Address</label>
-                        <input type="text" class="form-control" id="field-3" placeholder="Address">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label for="field-4" class="control-label">City</label>
-                        <input type="text" class="form-control" id="field-4" placeholder="Boston">
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label for="field-5" class="control-label">Country</label>
-                        <input type="text" class="form-control" id="field-5" placeholder="United States">
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label for="field-6" class="control-label">Zip</label>
-                        <input type="text" class="form-control" id="field-6" placeholder="123456">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group no-margin">
-                        <label for="field-7" class="control-label">Personal Info</label>
-                        <textarea class="form-control" id="field-7" placeholder="Write something about yourself"></textarea>
-                      </div>
-                    </div>
+                  <div class="modal-body">
+                    ...
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-info">Save changes</button>
-                </div>
+                <!-- /.modal-content -->
               </div>
+              <!-- /.modal-dialog -->
             </div>
-          </div>
-          <!-- /.modal -->
+            <!-- /.modal -->
 
-
-          <div id="accordion-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-            style="display: none;">
-            <div class="modal-dialog">
-              <div class="modal-content p-0">
-                <div id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="card">
-                    <div class="card-header" role="tab" id="headingOne">
-                      <h5 class="mb-0 mt-0">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Collapsible Group Item #1
-                        </a>
-                      </h5>
-                    </div>
-
-                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-                      <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                        synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
+            <!-- sample modal content -->
+            <div id="CenterModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="CenterModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="CenterModalLabel">Modal Heading</h4>
                   </div>
-                  <div class="card">
-                    <div class="card-header" role="tab" id="headingTwo">
-                      <h5 class="mb-0 mt-0">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Collapsible Group Item #2
-                        </a>
-                      </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                        synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
+                  <div class="modal-body">
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
                   </div>
-                  <div class="card">
-                    <div class="card-header" role="tab" id="headingThree">
-                      <h5 class="mb-0 mt-0">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Collapsible Group Item #3
-                        </a>
-                      </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                      <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                        synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
                   </div>
                 </div>
+                <!-- /.modal-content -->
               </div>
-              <!-- /.modal-content -->
+              <!-- /.modal-dialog -->
             </div>
-            <!-- /.modal-dialog -->
-          </div>
-          <!-- /.modal -->
+            <!-- /.modal -->
 
-          <div class="button-list">
-            <!-- Custom width modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#custom-width-modal">Custom width Modal</button>
-            <!-- Full width modal -->
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#full-width-modal">Full width Modal</button>
-            <!-- Responsive modal -->
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#con-close-modal">Responsive Modal</button>
-            <!-- Accordion modal -->
-            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#accordion-modal">Accordion in Modal</button>
+            <div class="button-list">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#myModal">Standard Modal</button>
+              <!-- Large modal -->
+              <button type="button" class="btn btn-info waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+              <!-- Small modal -->
+              <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+              <!-- Center modal -->
+              <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#CenterModal">Center Modal</button>
+
+            </div>
           </div>
         </div>
       </div>
-      <!-- end col -->
-    </div>
-    <!-- End row -->
-
-    <!-- Custom Modals -->
-    <div class="row">
-      <div class="col-12">
-        <div class="card-box">
-
-          <h4 class="header-title m-t-0 m-b-30">Modals Examples (Animations)</h4>
-
-          <table class="table">
-            <thead>
-              <tr>
-                <th style="width:30%;">Modal Type</th>
-                <th>Example</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="middle-align">Fade in</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="fadein" data-plugin="custommodal"
-                    data-overlaySpeed="200" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="middle-align">Slide</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="slide" data-plugin="custommodal"
-                    data-overlaySpeed="200" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Newspaper</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="newspaper" data-plugin="custommodal"
-                    data-overlaySpeed="200" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="middle-align">Fall</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="fall" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="middle-align">Side Fall</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="sidefall" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="middle-align">Blur</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="blur" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="middle-align">Flip</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="flip" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="middle-align">Sign</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="sign" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Super Scaled</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="superscaled" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="middle-align">Slit</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="slit" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Rotate</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="rotate" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="middle-align">Letmein</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="letmein" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="middle-align">Makeway</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="makeway" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Slip</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="slip" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Corner</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="corner" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">slide together</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="slidetogether" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Scale</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="scale" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Door</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="door" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Push</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="push" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Content Scale</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="contentscale" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Swell</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="swell" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Rotate Down</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="rotatedown" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="middle-align">Flash</td>
-                <td>
-                  <a href="#custom-modal" class="btn btn-sm btn-primary" data-animation="flash" data-plugin="custommodal"
-                    data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
-                </td>
-              </tr>
 
 
-            </tbody>
-          </table>
+      <!-- Custom Modals -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card-box">
 
+            <h4 class="header-title m-t-0 m-b-30">Custom Modals</h4>
+
+            <p class="text-muted m-b-15 font-13">
+              Examples of custom modals.
+            </p>
+
+            <!-- sample modal content -->
+
+            <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="full-width-modalLabel" aria-hidden="true"
+              style="display: none;">
+              <div class="modal-dialog modal-full">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="full-width-modalLabel">Modal Heading</h4>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Text in a modal</h4>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                    <hr>
+                    <h4>Overflowing text to show scroll behavior</h4>
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                      et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+            <div id="con-close-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+              style="display: none;">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Modal Content is Responsive</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="field-1" class="control-label">Name</label>
+                          <input type="text" class="form-control" id="field-1" placeholder="John">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="field-2" class="control-label">Surname</label>
+                          <input type="text" class="form-control" id="field-2" placeholder="Doe">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="field-3" class="control-label">Address</label>
+                          <input type="text" class="form-control" id="field-3" placeholder="Address">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="field-4" class="control-label">City</label>
+                          <input type="text" class="form-control" id="field-4" placeholder="Boston">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="field-5" class="control-label">Country</label>
+                          <input type="text" class="form-control" id="field-5" placeholder="United States">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="field-6" class="control-label">Zip</label>
+                          <input type="text" class="form-control" id="field-6" placeholder="123456">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group no-margin">
+                          <label for="field-7" class="control-label">Personal Info</label>
+                          <textarea class="form-control" id="field-7" placeholder="Write something about yourself"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info waves-effect waves-light">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.modal -->
+
+
+            <div id="accordion-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+              style="display: none;">
+              <div class="modal-dialog">
+                <div class="modal-content p-0">
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="card">
+                      <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0 mt-0">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Collapsible Group Item #1
+                          </a>
+                        </h5>
+                      </div>
+
+                      <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                          non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                          et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                          synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0 mt-0">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Collapsible Group Item #2
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                          non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                          et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                          synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0 mt-0">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                          non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                          et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                          synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+            <div class="button-list">
+              <!-- Full width modal -->
+              <button type="button" class="btn btn-info waves-effect waves-light" data-toggle="modal" data-target="#full-width-modal">Full width Modal</button>
+              <!-- Responsive modal -->
+              <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target="#con-close-modal">Responsive Modal</button>
+              <!-- Accordion modal -->
+              <button type="button" class="btn btn-secondary waves-effect waves-light" data-toggle="modal" data-target="#accordion-modal">Accordion in Modal</button>
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- End row -->
+
+      <!-- Custom Modals -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card-box">
+
+            <h4 class="header-title m-t-0 m-b-30">Modals Examples (Animations)</h4>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th style="width:30%;">Modal Type</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="middle-align">Fade in</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="fadein" data-plugin="custommodal"
+                      data-overlaySpeed="200" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="middle-align">Slide</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="slide" data-plugin="custommodal"
+                      data-overlaySpeed="200" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Newspaper</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="newspaper" data-plugin="custommodal"
+                      data-overlaySpeed="200" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="middle-align">Fall</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="fall" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="middle-align">Side Fall</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="sidefall" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="middle-align">Blur</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="blur" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="middle-align">Flip</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="flip" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="middle-align">Sign</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="sign" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Super Scaled</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="superscaled" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="middle-align">Slit</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="slit" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Rotate</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="rotate" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="middle-align">Letmein</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="letmein" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="middle-align">Makeway</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="makeway" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Slip</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="slip" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Corner</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="corner" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">slide together</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="slidetogether" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Scale</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="scale" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Door</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="door" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Push</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="push" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Content Scale</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="contentscale" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Swell</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="swell" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Rotate Down</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="rotatedown" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="middle-align">Flash</td>
+                  <td>
+                    <a href="#custom-modal" class="btn btn-sm btn-primary waves-effect waves-light" data-animation="flash" data-plugin="custommodal"
+                      data-overlaySpeed="100" data-overlayColor="#36404a">Show Me</a>
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+
+          </div>
         </div>
       </div>
-    </div>
 
+    </div>
+    <!-- end container -->
   </div>
-  <!-- end container -->
+  <!-- end wrapper -->
 
 
-  <!-- #include file="footer.html" -->
-
-
-  <!-- Custom Modal -->
-  <div id="custom-modal" class="modal-demo">
-    <button type="button" class="close" onclick="Custombox.close();">
-      <span>&times;</span>
-      <span class="sr-only">Close</span>
-    </button>
-    <h4 class="custom-modal-title">Modal title</h4>
-    <div class="custom-modal-text">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-      text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-      It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-      with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        2013 - 2018 © SiteServer CMS
+      </div>
     </div>
   </div>
+</footer>
+<!-- End Footer -->
 
 </body>
 
 </html>
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<!-- Popper for Bootstrap -->
+<!-- Tether for Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+
+<!--Chartist Chart-->
+<script src="../plugins/chartist/dist/chartist.min.js"></script>
+<script src="assets/pages/jquery.chartist.init.js"></script>
+
+<!-- App js -->
+<script src="assets/js/jquery.core.js"></script>
+<script src="assets/js/jquery.app.js"></script>

@@ -3,329 +3,325 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
+  <!-- #include file="head.html" -->
+
 </head>
 
 <body>
-
   <!-- #include file="header.html" -->
 
+  <div class="wrapper">
+    <div class="container-fluid">
 
-  <div class="container-fluid">
-
-    <!-- Page-Title -->
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-title-box">
-          <div class="btn-group float-right">
-            <ol class="breadcrumb hide-phone p-0 m-0">
-              <li class="breadcrumb-item">
-                <a href="#">SiteServer</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">UI Kit</a>
-              </li>
-              <li class="breadcrumb-item active">Portlets</li>
-            </ol>
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group float-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">SiteServer</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">UI Kit</a>
+                </li>
+                <li class="breadcrumb-item active">Portlets</li>
+              </ol>
+            </div>
+            <h4 class="page-title">Portlets</h4>
           </div>
-          <h4 class="page-title">Portlets</h4>
         </div>
       </div>
+      <!-- end page title end breadcrumb -->
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="portlet">
+            <div class="portlet-heading portlet-default">
+              <h3 class="portlet-title text-dark">
+                Default Heading
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#bg-default">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="bg-default" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
+                arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portlet">
+            <div class="portlet-heading bg-primary">
+              <h3 class="portlet-title">
+                Primary Heading
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#bg-primary">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="bg-primary" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
+                arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portlet">
+            <div class="portlet-heading bg-info">
+              <h3 class="portlet-title">
+                Info Heading
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#bg-info">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="bg-info" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
+                arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End row -->
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="portlet">
+            <div class="portlet-heading bg-success">
+              <h3 class="portlet-title">
+                Success Heading
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#bg-success">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="bg-success" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
+                arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portlet">
+            <div class="portlet-heading bg-warning">
+              <h3 class="portlet-title">
+                Warning Heading
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#bg-warning">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="bg-warning" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
+                arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portlet">
+            <div class="portlet-heading bg-danger">
+              <h3 class="portlet-title">
+                Danger Heading
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#bg-danger">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="bg-danger" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
+                arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End row -->
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="portlet">
+            <div class="portlet-heading bg-inverse">
+              <h3 class="portlet-title">
+                Inverse Heading
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#bg-inverse">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="bg-inverse" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
+                arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portlet">
+            <div class="portlet-heading bg-pink">
+              <h3 class="portlet-title">
+                Pink Heading
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#bg-pink">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="bg-pink" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
+                arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portlet">
+            <div class="portlet-heading bg-purple">
+              <h3 class="portlet-title">
+                Purple Heading
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#bg-purple">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="bg-purple" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
+                arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End row -->
+
     </div>
-    <!-- end page title end breadcrumb -->
-
-
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="portlet">
-          <div class="portlet-heading portlet-default">
-            <h3 class="portlet-title text-dark">
-              Default Heading
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#bg-default">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="bg-default" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
-              arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portlet">
-          <div class="portlet-heading bg-primary">
-            <h3 class="portlet-title">
-              Primary Heading
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#bg-primary">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="bg-primary" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
-              arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portlet">
-          <div class="portlet-heading bg-info">
-            <h3 class="portlet-title">
-              Info Heading
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#bg-info">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="bg-info" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
-              arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- End row -->
-
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="portlet">
-          <div class="portlet-heading bg-success">
-            <h3 class="portlet-title">
-              Success Heading
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#bg-success">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="bg-success" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
-              arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portlet">
-          <div class="portlet-heading bg-warning">
-            <h3 class="portlet-title">
-              Warning Heading
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#bg-warning">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="bg-warning" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
-              arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portlet">
-          <div class="portlet-heading bg-danger">
-            <h3 class="portlet-title">
-              Danger Heading
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#bg-danger">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="bg-danger" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
-              arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- End row -->
-
-
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="portlet">
-          <div class="portlet-heading bg-inverse">
-            <h3 class="portlet-title">
-              Inverse Heading
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#bg-inverse">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="bg-inverse" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
-              arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portlet">
-          <div class="portlet-heading bg-pink">
-            <h3 class="portlet-title">
-              Pink Heading
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#bg-pink">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="bg-pink" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
-              arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portlet">
-          <div class="portlet-heading bg-purple">
-            <h3 class="portlet-title">
-              Purple Heading
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#bg-purple">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="bg-purple" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit
-              arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- End row -->
-
+    <!-- end container -->
   </div>
-  <!-- end container -->
+  <!-- end wrapper -->
 
 
   <!-- #include file="footer.html" -->
@@ -333,3 +329,4 @@
 </body>
 
 </html>
+<!-- #include file="foot.html" -->

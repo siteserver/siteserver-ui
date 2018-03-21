@@ -1,6 +1,9 @@
 /* ===========
    Menu
  =============*/
+.wrapper {
+  padding-top: 120px;
+}
 
 .page-title-box {
   padding: 22px 0;
@@ -14,6 +17,11 @@
 }
 
 #topnav {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1030;
   background-color: transparent;
   border: 0;
   -webkit-transition: all .5s ease;
@@ -281,6 +289,10 @@
       padding-bottom: 20px;
     }
 
+    .navigation-menu > li:first-of-type > a {
+      padding-left: 0;
+    }
+
     .navigation-menu > li.last-elements .submenu {
       left: auto;
       right: 0;
@@ -342,11 +354,11 @@
     }
     .navigation-menu > li .submenu > li.has-submenu > a:after {
       content: "\f3d3";
-      font-family: 'Ionicons';
+      font-family: Ionicons;
       position: absolute;
       right: 20px;
-      font-size: 16px;
       top: 8px;
+      font-size: 16px;
     }
     .navigation-menu > li .submenu > li .submenu {
       left: 100%;
@@ -398,6 +410,9 @@
 
 }
 @media (max-width: 991px) {
+  .wrapper {
+    padding-top: 60px;
+  }
   .container {
     width: auto !important;
   }
@@ -442,12 +457,11 @@
       color: $primary;
     }
     .navigation-menu > li .submenu li.has-submenu > a:after {
-      content: "\f3d3";
-      font-family: 'Ionicons';
+      content: "\e64b";
+      font-family: "themify";
       position: absolute;
-      right: 20px;
-      font-size: 16px;
-      top: 8px;
+      right: 30px;
+      font-size: 10px;
     }
     .navigation-menu > li .submenu.open {
       display: block;

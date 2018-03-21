@@ -2,11 +2,11 @@
    Alerts
 ============= */
 .alert-success {
-  background-color: lighten($success, 60%) !important;
-  border-color: lighten($success, 10%) !important;
-  color: $success;
+  background-color: lighten($primary, 60%) !important;
+  border-color: lighten($primary, 10%) !important;
+  color: $primary;
   .alert-link {
-    color: $success;
+    color: $primary;
   }
 }
 

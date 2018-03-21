@@ -17,11 +17,11 @@ gulp.task('build-clean', function () {
 });
 
 gulp.task('build-css', function () {
-  return gulp.src('./scss/*.scss').pipe(sourcemaps.init()).pipe(sass().on('error', sass.logError)).pipe(sourcemaps.write()).pipe(gulp.dest('./dist/css'));
+  return gulp.src('./scss/*.scss').pipe(sourcemaps.init()).pipe(sass().on('error', sass.logError)).pipe(sourcemaps.write()).pipe(gulp.dest('./dist'));
 });
 
 gulp.task('build-min', function () {
-  return gulp.src('./dist/css/siteserver.css')
+  return gulp.src('./dist/siteserver.css')
     .pipe(minify({
       minify: true,
       collapseWhitespace: true,
@@ -36,23 +36,27 @@ gulp.task('build-min', function () {
     * Licensed under GPL-3.0 (https://github.com/siteserver/siteserver-ui/blob/master/LICENSE)
     */`))
     .pipe(rename('siteserver.min.css'))
-    .pipe(gulp.dest('./dist/css'));
-});
-
-gulp.task('build-fonts', function () {
-  return gulp.src('./fonts/**').pipe(gulp.dest('./dist/fonts'));
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('build-docs-assets', function () {
-  return gulp.src('./dist/**').pipe(gulp.dest('./docs/assets'));
+  return gulp.src('./dist/**').pipe(gulp.dest('./docs/assets/css'));
 });
 
 gulp.task('build-docs-replace', function () {
-  fs.readFile('./docs-template/include/header.html', 'utf8', function (err, contents) {
-    gulp.src('./docs-template/templates/*.html').pipe(replace('<!-- #include file="header.html" -->', contents)).pipe(gulp.dest('./docs'));
-  });
+  var head = fs.readFileSync('./docs-template/include/head.html', 'utf-8');
+  var header = fs.readFileSync('./docs-template/include/header.html', 'utf-8');
+  var footer = fs.readFileSync('./docs-template/include/footer.html', 'utf-8');
+  var foot = fs.readFileSync('./docs-template/include/foot.html', 'utf-8');
+
+  gulp.src('./docs-template/templates/*.html')
+    .pipe(replace('<!-- #include file="head.html" -->', head))
+    .pipe(replace('<!-- #include file="header.html" -->', header))
+    .pipe(replace('<!-- #include file="footer.html" -->', footer))
+    .pipe(replace('<!-- #include file="foot.html" -->', foot))
+    .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('build', function (callback) {
-  runSequence('build-clean', 'build-css', 'build-min', 'build-fonts', 'build-docs-assets', 'build-docs-replace', callback);
+  runSequence('build-clean', 'build-css', 'build-min', 'build-docs-assets', 'build-docs-replace', callback);
 });

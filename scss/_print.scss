@@ -2,7 +2,7 @@
    Print css
 ============= */
 @media print {
-  .logo,.breadcrumb,.page-title,.footer,.topbar,.btn-group.float-right.m-t-15,#topnav {
+  .logo,.breadcrumb,.page-title,.footer,.topbar,.btn-group.pull-right.m-t-15,#topnav {
     display: none;
     margin: 0;
     padding: 0;

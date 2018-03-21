@@ -3,185 +3,180 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
+  <!-- #include file="head.html" -->
 </head>
 
 <body>
-
   <!-- #include file="header.html" -->
 
+  <div class="wrapper">
+    <div class="container-fluid">
 
-  <div class="container-fluid">
-
-    <!-- Page-Title -->
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-title-box">
-          <div class="btn-group float-right">
-            <ol class="breadcrumb hide-phone p-0 m-0">
-              <li class="breadcrumb-item">
-                <a href="#">SiteServer</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">Extras</a>
-              </li>
-              <li class="breadcrumb-item active">Invoice</li>
-            </ol>
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group float-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">SiteServer</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Extras</a>
+                </li>
+                <li class="breadcrumb-item active">Invoice</li>
+              </ol>
+            </div>
+            <h4 class="page-title">Invoice</h4>
           </div>
-          <h4 class="page-title">Invoice</h4>
         </div>
       </div>
-    </div>
-    <!-- end page title end breadcrumb -->
+      <!-- end page title end breadcrumb -->
 
 
-    <div class="row">
-      <div class="col-12">
-        <div class="card-box">
-          <!-- <div class="panel-heading">
-                              <h4>Invoice</h4>
-                          </div> -->
-          <div class="panel-body">
-            <div class="clearfix">
-              <div class="float-left">
-                <h3 class="text-right">
-                  <i class="mdi mdi-radar"></i>SiteServer</h3>
-              </div>
-              <div class="float-right">
-                <h6>Invoice #
-                  <br>
-                  <strong>2015-04-23654789</strong>
-                </h6>
-              </div>
-            </div>
-            <hr>
-            <div class="row">
-              <div class="col-12">
-                <div class="float-left m-t-30">
-                  <address>
-                    <strong>Twitter, Inc.</strong>
-                    <br> 795 Folsom Ave, Suite 600
-                    <br> San Francisco, CA 94107
+      <div class="row">
+        <div class="col-12">
+          <div class="card-box">
+            <!-- <div class="panel-heading">
+                                <h4>Invoice</h4>
+                            </div> -->
+            <div class="panel-body">
+              <div class="clearfix">
+                <div class="pull-left">
+                  <h3 class="text-right">
+                    <i class="mdi mdi-radar"></i>SiteServer</h3>
+                </div>
+                <div class="float-right">
+                  <h6>Invoice #
                     <br>
-                    <abbr title="Phone">P:</abbr> (123) 456-7890
-                  </address>
-                </div>
-                <div class="float-right m-t-30">
-                  <p>
-                    <strong>Order Date: </strong> Jun 15, 2015</p>
-                  <p class="m-t-10">
-                    <strong>Order Status: </strong>
-                    <span class="badge badge-danger">Pending</span>
-                  </p>
-                  <p class="m-t-10">
-                    <strong>Order ID: </strong> #123456</p>
+                    <strong>2015-04-23654789</strong>
+                  </h6>
                 </div>
               </div>
-            </div>
-            <div class="m-h-50"></div>
-            <div class="row">
-              <div class="col-12">
-                <div class="table-responsive">
-                  <table class="table m-t-30">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>Item</th>
-                        <th>Description</th>
-                        <th>Quantity</th>
-                        <th>Unit Cost</th>
-                        <th>Total</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>LCD</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>1</td>
-                        <td>$380</td>
-                        <td>$380</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Mobile</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>5</td>
-                        <td>$50</td>
-                        <td>$250</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>LED</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>2</td>
-                        <td>$500</td>
-                        <td>$1000</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>LCD</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>3</td>
-                        <td>$300</td>
-                        <td>$900</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Mobile</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                        <td>5</td>
-                        <td>$80</td>
-                        <td>$400</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <hr>
+              <div class="row">
+                <div class="col-12">
+                  <div class="pull-left m-t-30">
+                    <address>
+                      <strong>Twitter, Inc.</strong>
+                      <br> 795 Folsom Ave, Suite 600
+                      <br> San Francisco, CA 94107
+                      <br>
+                      <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                  </div>
+                  <div class="float-right m-t-30">
+                    <p>
+                      <strong>Order Date: </strong> Jun 15, 2015</p>
+                    <p class="m-t-10">
+                      <strong>Order Status: </strong>
+                      <span class="badge badge-danger">Pending</span>
+                    </p>
+                    <p class="m-t-10">
+                      <strong>Order ID: </strong> #123456</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <div class="clearfix m-t-40">
-                  <h5 class="small text-inverse">PAYMENT TERMS AND POLICIES</h5>
+              <div class="m-h-50"></div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table class="table m-t-30">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Item</th>
+                          <th>Description</th>
+                          <th>Quantity</th>
+                          <th>Unit Cost</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>LCD</td>
+                          <td>Lorem ipsum dolor sit amet.</td>
+                          <td>1</td>
+                          <td>$380</td>
+                          <td>$380</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Mobile</td>
+                          <td>Lorem ipsum dolor sit amet.</td>
+                          <td>5</td>
+                          <td>$50</td>
+                          <td>$250</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>LED</td>
+                          <td>Lorem ipsum dolor sit amet.</td>
+                          <td>2</td>
+                          <td>$500</td>
+                          <td>$1000</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>LCD</td>
+                          <td>Lorem ipsum dolor sit amet.</td>
+                          <td>3</td>
+                          <td>$300</td>
+                          <td>$900</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Mobile</td>
+                          <td>Lorem ipsum dolor sit amet.</td>
+                          <td>5</td>
+                          <td>$80</td>
+                          <td>$400</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="clearfix m-t-40">
+                    <h5 class="small text-inverse">PAYMENT TERMS AND POLICIES</h5>
 
-                  <small>
-                    All accounts are to be paid within 7 days from receipt of invoice. To be paid by cheque or credit card or direct payment
-                    online. If account is not paid within 7 days the credits details supplied as confirmation of work undertaken
-                    will be charged the agreed quoted fee noted above.
-                  </small>
+                    <small>
+                      All accounts are to be paid within 7 days from receipt of invoice. To be paid by cheque or credit card or direct payment
+                      online. If account is not paid within 7 days the credits details supplied as confirmation of work undertaken
+                      will be charged the agreed quoted fee noted above.
+                    </small>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p class="text-right">
+                    <b>Sub-total:</b> 2930.00</p>
+                  <p class="text-right">Discout: 12.9%</p>
+                  <p class="text-right">VAT: 12.9%</p>
+                  <hr>
+                  <h4 class="text-right">USD 2930.00</h4>
                 </div>
               </div>
-              <div class="col-6">
-                <p class="text-right">
-                  <b>Sub-total:</b> 2930.00</p>
-                <p class="text-right">Discout: 12.9%</p>
-                <p class="text-right">VAT: 12.9%</p>
-                <hr>
-                <h4 class="text-right">USD 2930.00</h4>
-              </div>
-            </div>
-            <hr>
-            <div class="d-print-none">
-              <div class="text-right">
-                <a href="javascript:window.print()" class="btn btn-dark">
-                  <i class="fa fa-print"></i>
-                </a>
-                <a href="#" class="btn btn-primary">Submit</a>
+              <hr>
+              <div class="d-print-none">
+                <div class="text-right">
+                  <a href="javascript:window.print()" class="btn btn-dark waves-effect waves-light">
+                    <i class="fa fa-print"></i>
+                  </a>
+                  <a href="#" class="btn btn-primary waves-effect waves-light">Submit</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
+    <!-- end container -->
   </div>
-  <!-- end container -->
+  <!-- end wrapper -->
 
 
   <!-- #include file="footer.html" -->
@@ -189,3 +184,4 @@
 </body>
 
 </html>
+<!-- #include file="foot.html" -->

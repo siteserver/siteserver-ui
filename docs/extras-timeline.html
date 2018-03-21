@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="shortcut icon" href="assets/images/favicon.png">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/siteserver.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
   <!-- Navigation Bar-->
 <header id="topnav">
   <div class="topbar-main">
@@ -21,23 +21,13 @@
 
       <!-- Logo container-->
       <div class="logo">
-        <!-- Text Logo -->
-        <a href="index.html" class="logo">
-          <span class="logo-small">
-            <i class="mdi mdi-radar"></i>
-          </span>
-          <span class="logo-large">
-            <i class="mdi mdi-radar"></i> SiteServer</span>
-        </a>
         <!-- Image Logo -->
-        <!--<a href="index.html" class="logo">-->
-        <!--<img src="assets/images/logo_dark.png" alt="" height="24" class="logo-lg">-->
-        <!--<img src="assets/images/logo_sm.png" alt="" height="24" class="logo-sm">-->
-        <!--</a>-->
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo_dark.png" alt="" class="logo-lg">
+        </a>
 
       </div>
       <!-- End Logo container-->
-
 
       <div class="menu-extras topbar-custom">
 
@@ -55,7 +45,7 @@
             <!-- End mobile menu toggle-->
           </li>
           <li class="list-inline-item dropdown notification-list">
-            <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
               aria-expanded="false">
               <i class="mdi mdi-bell noti-icon"></i>
               <span class="badge badge-pink noti-icon-badge">4</span>
@@ -107,7 +97,7 @@
           </li>
 
           <li class="list-inline-item dropdown notification-list">
-            <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+            <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
               aria-expanded="false">
               <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
             </a>
@@ -121,7 +111,7 @@
 
               <!-- item-->
               <a href="javascript:void(0);" class="dropdown-item notify-item">
-                <i class="mdi mdi-account-star-variant"></i>
+                <i class="mdi mdi-account"></i>
                 <span>Profile</span>
               </a>
 
@@ -201,9 +191,6 @@
               <li>
                 <a href="ui-typography.html">Typography</a>
               </li>
-              <li>
-                <a href="icons-ionicons.html">Icons</a>
-              </li>
             </ul>
           </li>
 
@@ -236,6 +223,26 @@
             <a href="#">
               <i class="ti-spray"></i>Other</a>
             <ul class="submenu">
+              <li class="has-submenu">
+                <a href="#">Icons</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="icons-materialdesign.html">Material Design</a>
+                  </li>
+                  <li>
+                    <a href="icons-themifyicon.html">Themify Icons</a>
+                  </li>
+                  <li>
+                    <a href="icons-ionicons.html">Ion Icons</a>
+                  </li>
+                  <li>
+                    <a href="icons-fontawesome.html">Font awesome</a>
+                  </li>
+                  <li>
+                    <a href="icons-weather.html">Weather Icons</a>
+                  </li>
+                </ul>
+              </li>
 
               <li class="has-submenu">
                 <a href="#">Forms</a>
@@ -248,6 +255,9 @@
                   </li>
                   <li>
                     <a href="form-validation.html">Form Validation</a>
+                  </li>
+                  <li>
+                    <a href="form-wizard.html">Form Wizard</a>
                   </li>
                   <li>
                     <a href="form-wysiwig.html">WYSIWYG Editor</a>
@@ -314,6 +324,18 @@
                   </li>
                   <li>
                     <a href="chart-other.html">Other Chart</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="has-submenu">
+                <a href="#">Maps</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="map-google.html"> Google Map</a>
+                  </li>
+                  <li>
+                    <a href="map-vector.html"> Vector Map</a>
                   </li>
                 </ul>
               </li>
@@ -436,253 +458,282 @@
 </header>
 <!-- End Navigation Bar-->
 
+  <div class="wrapper">
+    <div class="container-fluid">
 
-  <div class="container-fluid">
-
-    <!-- Page-Title -->
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-title-box">
-          <div class="btn-group float-right">
-            <ol class="breadcrumb hide-phone p-0 m-0">
-              <li class="breadcrumb-item">
-                <a href="#">SiteServer</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">Extras</a>
-              </li>
-              <li class="breadcrumb-item active">Timeline</li>
-            </ol>
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group float-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">SiteServer</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Extras</a>
+                </li>
+                <li class="breadcrumb-item active">Timeline</li>
+              </ol>
+            </div>
+            <h4 class="page-title">Timeline</h4>
           </div>
-          <h4 class="page-title">Timeline</h4>
         </div>
       </div>
-    </div>
-    <!-- end page title end breadcrumb -->
+      <!-- end page title end breadcrumb -->
 
 
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="timeline">
-          <article class="timeline-item alt">
-            <div class="text-right">
-              <div class="time-show first">
-                <a href="#" class="btn btn-primary w-lg">Today</a>
-              </div>
-            </div>
-          </article>
-          <article class="timeline-item alt">
-            <div class="timeline-desk">
-              <div class="panel">
-                <div class="panel-body">
-                  <span class="arrow-alt"></span>
-                  <span class="timeline-icon"></span>
-                  <h4 class="text-danger">1 hour ago</h4>
-                  <p class="timeline-date text-muted">
-                    <small>08:25 am</small>
-                  </p>
-                  <p>Dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? </p>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="timeline">
+            <article class="timeline-item alt">
+              <div class="text-right">
+                <div class="time-show first">
+                  <a href="#" class="btn btn-primary w-lg">Today</a>
                 </div>
               </div>
-            </div>
-          </article>
-          <article class="timeline-item ">
-            <div class="timeline-desk">
-              <div class="panel">
-                <div class="panel-body">
-                  <span class="arrow"></span>
-                  <span class="timeline-icon"></span>
-                  <h4 class="text-success">2 hours ago</h4>
-                  <p class="timeline-date text-muted">
-                    <small>08:25 am</small>
-                  </p>
-                  <p>consectetur adipisicing elit. Iusto, optio, dolorum
-                    <a href="#">John deon</a> provident rerum aut hic quasi placeat iure tempora laudantium </p>
-
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="timeline-item alt">
-            <div class="timeline-desk">
-              <div class="panel">
-                <div class="panel-body">
-                  <span class="arrow-alt"></span>
-                  <span class="timeline-icon"></span>
-                  <h4 class="text-primary">10 hours ago</h4>
-                  <p class="timeline-date text-muted">
-                    <small>08:25 am</small>
-                  </p>
-                  <p>3 new photo Uploaded on facebook fan page</p>
-                  <div class="album">
-                    <a href="#">
-                      <img alt="" src="assets/images/small/img1.jpg">
-                    </a>
-                    <a href="#">
-                      <img alt="" src="assets/images/small/img2.jpg">
-                    </a>
-                    <a href="#">
-                      <img alt="" src="assets/images/small/img3.jpg">
-                    </a>
+            </article>
+            <article class="timeline-item alt">
+              <div class="timeline-desk">
+                <div class="panel">
+                  <div class="panel-body">
+                    <span class="arrow-alt"></span>
+                    <span class="timeline-icon"></span>
+                    <h4 class="text-danger">1 hour ago</h4>
+                    <p class="timeline-date text-muted">
+                      <small>08:25 am</small>
+                    </p>
+                    <p>Dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? </p>
                   </div>
-                  <div class="clearfix"></div>
                 </div>
               </div>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-desk">
-              <div class="panel">
-                <div class="panel-body">
-                  <span class="arrow"></span>
-                  <span class="timeline-icon"></span>
-                  <h4 class="text-purple">14 hours ago</h4>
-                  <p class="timeline-date text-muted">
-                    <small>08:25 am</small>
-                  </p>
-                  <p>Outdoor visit at California State Route 85 with John Boltana & Harry Piterson regarding to setup a new
-                    show room.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="timeline-item alt">
-            <div class="timeline-desk">
-              <div class="panel">
-                <div class="panel-body">
-                  <span class="arrow-alt"></span>
-                  <span class="timeline-icon"></span>
-                  <h4 class="text-muted">19 hours ago</h4>
-                  <p class="timeline-date text-muted">
-                    <small>08:25 am</small>
-                  </p>
-                  <p>Jonatha Smith added new milestone
-                    <span>
-                      <a href="#">Pathek</a>
-                    </span>
-                    Lorem ipsum dolor sit amet consiquest dio</p>
-                </div>
-              </div>
-            </div>
-          </article>
+            </article>
+            <article class="timeline-item ">
+              <div class="timeline-desk">
+                <div class="panel">
+                  <div class="panel-body">
+                    <span class="arrow"></span>
+                    <span class="timeline-icon"></span>
+                    <h4 class="text-success">2 hours ago</h4>
+                    <p class="timeline-date text-muted">
+                      <small>08:25 am</small>
+                    </p>
+                    <p>consectetur adipisicing elit. Iusto, optio, dolorum
+                      <a href="#">John deon</a> provident rerum aut hic quasi placeat iure tempora laudantium </p>
 
-          <article class="timeline-item alt">
-            <div class="text-right">
-              <div class="time-show">
-                <a href="#" class="btn btn-primary w-lg">Yesterday</a>
-              </div>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-desk">
-              <div class="panel">
-                <div class="panel-body">
-                  <span class="arrow"></span>
-                  <span class="timeline-icon"></span>
-                  <h4 class="text-warning">07 January 2016</h4>
-                  <p class="timeline-date text-muted">
-                    <small>08:25 am</small>
-                  </p>
-                  <p>Montly Regular Medical check up at Greenland Hospital by the doctor
-                    <span>
-                      <a href="#"> Johm meon </a>
-                    </span>
-                  </p>
-
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <article class="timeline-item alt">
-            <div class="timeline-desk">
-              <div class="panel">
-                <div class="panel-body">
-                  <span class="arrow-alt"></span>
-                  <span class="timeline-icon"></span>
-                  <h4 class="text-primary">07 January 2016</h4>
-                  <p class="timeline-date text-muted">
-                    <small>08:25 am</small>
-                  </p>
-                  <p>Download the new updates of Ubold admin dashboard</p>
+            </article>
+            <article class="timeline-item alt">
+              <div class="timeline-desk">
+                <div class="panel">
+                  <div class="panel-body">
+                    <span class="arrow-alt"></span>
+                    <span class="timeline-icon"></span>
+                    <h4 class="text-primary">10 hours ago</h4>
+                    <p class="timeline-date text-muted">
+                      <small>08:25 am</small>
+                    </p>
+                    <p>3 new photo Uploaded on facebook fan page</p>
+                    <div class="album">
+                      <a href="#">
+                        <img alt="" src="assets/images/small/img1.jpg">
+                      </a>
+                      <a href="#">
+                        <img alt="" src="assets/images/small/img2.jpg">
+                      </a>
+                      <a href="#">
+                        <img alt="" src="assets/images/small/img3.jpg">
+                      </a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-desk">
-              <div class="panel">
-                <div class="panel-body">
-                  <span class="arrow"></span>
-                  <span class="timeline-icon"></span>
-                  <h4 class="text-success">07 January 2016</h4>
-                  <p class="timeline-date text-muted">
-                    <small>08:25 am</small>
-                  </p>
-                  <p>Jonatha Smith added new milestone
-                    <span>
-                      <a class="blue" href="#">crishtian</a>
-                    </span>
-                    Lorem ipsum dolor sit amet consiquest dio</p>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-desk">
+                <div class="panel">
+                  <div class="panel-body">
+                    <span class="arrow"></span>
+                    <span class="timeline-icon"></span>
+                    <h4 class="text-purple">14 hours ago</h4>
+                    <p class="timeline-date text-muted">
+                      <small>08:25 am</small>
+                    </p>
+                    <p>Outdoor visit at California State Route 85 with John Boltana & Harry Piterson regarding to setup a new
+                      show room.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <article class="timeline-item alt">
-            <div class="text-right">
-              <div class="time-show">
-                <a href="#" class="btn btn-primary w-lg">Last Month</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item alt">
-            <div class="timeline-desk">
-              <div class="panel">
-                <div class="panel-body">
-                  <span class="arrow-alt"></span>
-                  <span class="timeline-icon"></span>
-                  <h4 class="text-muted">31 December 2015</h4>
-                  <p class="timeline-date text-muted">
-                    <small>08:25 am</small>
-                  </p>
-                  <p>Download the new updates of Ubold admin dashboard</p>
+            </article>
+            <article class="timeline-item alt">
+              <div class="timeline-desk">
+                <div class="panel">
+                  <div class="panel-body">
+                    <span class="arrow-alt"></span>
+                    <span class="timeline-icon"></span>
+                    <h4 class="text-muted">19 hours ago</h4>
+                    <p class="timeline-date text-muted">
+                      <small>08:25 am</small>
+                    </p>
+                    <p>Jonatha Smith added new milestone
+                      <span>
+                        <a href="#">Pathek</a>
+                      </span>
+                      Lorem ipsum dolor sit amet consiquest dio</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="timeline-item">
-            <div class="timeline-desk">
-              <div class="panel">
-                <div class="panel-body">
-                  <span class="arrow"></span>
-                  <span class="timeline-icon"></span>
-                  <h4 class="text-danger">16 Decembar 2015</h4>
-                  <p class="timeline-date text-muted">
-                    <small>08:25 am</small>
-                  </p>
-                  <p>Jonatha Smith added new milestone
-                    <span>
-                      <a href="#">prank</a>
-                    </span>
-                    Lorem ipsum dolor sit amet consiquest dio</p>
+            <article class="timeline-item alt">
+              <div class="text-right">
+                <div class="time-show">
+                  <a href="#" class="btn btn-primary w-lg">Yesterday</a>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-desk">
+                <div class="panel">
+                  <div class="panel-body">
+                    <span class="arrow"></span>
+                    <span class="timeline-icon"></span>
+                    <h4 class="text-warning">07 January 2016</h4>
+                    <p class="timeline-date text-muted">
+                      <small>08:25 am</small>
+                    </p>
+                    <p>Montly Regular Medical check up at Greenland Hospital by the doctor
+                      <span>
+                        <a href="#"> Johm meon </a>
+                      </span>
+                    </p>
 
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="timeline-item alt">
+              <div class="timeline-desk">
+                <div class="panel">
+                  <div class="panel-body">
+                    <span class="arrow-alt"></span>
+                    <span class="timeline-icon"></span>
+                    <h4 class="text-primary">07 January 2016</h4>
+                    <p class="timeline-date text-muted">
+                      <small>08:25 am</small>
+                    </p>
+                    <p>Download the new updates of Ubold admin dashboard</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-desk">
+                <div class="panel">
+                  <div class="panel-body">
+                    <span class="arrow"></span>
+                    <span class="timeline-icon"></span>
+                    <h4 class="text-success">07 January 2016</h4>
+                    <p class="timeline-date text-muted">
+                      <small>08:25 am</small>
+                    </p>
+                    <p>Jonatha Smith added new milestone
+                      <span>
+                        <a class="blue" href="#">crishtian</a>
+                      </span>
+                      Lorem ipsum dolor sit amet consiquest dio</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="timeline-item alt">
+              <div class="text-right">
+                <div class="time-show">
+                  <a href="#" class="btn btn-primary w-lg">Last Month</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item alt">
+              <div class="timeline-desk">
+                <div class="panel">
+                  <div class="panel-body">
+                    <span class="arrow-alt"></span>
+                    <span class="timeline-icon"></span>
+                    <h4 class="text-muted">31 December 2015</h4>
+                    <p class="timeline-date text-muted">
+                      <small>08:25 am</small>
+                    </p>
+                    <p>Download the new updates of Ubold admin dashboard</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-desk">
+                <div class="panel">
+                  <div class="panel-body">
+                    <span class="arrow"></span>
+                    <span class="timeline-icon"></span>
+                    <h4 class="text-danger">16 Decembar 2015</h4>
+                    <p class="timeline-date text-muted">
+                      <small>08:25 am</small>
+                    </p>
+                    <p>Jonatha Smith added new milestone
+                      <span>
+                        <a href="#">prank</a>
+                      </span>
+                      Lorem ipsum dolor sit amet consiquest dio</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
         </div>
       </div>
+      <!-- end row -->
+
     </div>
-    <!-- end row -->
-
+    <!-- end container -->
   </div>
-  <!-- end container -->
+  <!-- end wrapper -->
 
 
-  <!-- #include file="footer.html" -->
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        2013 - 2018 © SiteServer CMS
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
 
 </body>
 
 </html>
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<!-- Popper for Bootstrap -->
+<!-- Tether for Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+
+<!--Chartist Chart-->
+<script src="../plugins/chartist/dist/chartist.min.js"></script>
+<script src="assets/pages/jquery.chartist.init.js"></script>
+
+<!-- App js -->
+<script src="assets/js/jquery.core.js"></script>
+<script src="assets/js/jquery.app.js"></script>

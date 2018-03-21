@@ -59,6 +59,11 @@
 }
 
 /* Datatable */
+.dataTables_wrapper.container-fluid {
+  max-width: 100%;
+  padding: 0;
+}
+
 div.dataTables_paginate {
   ul.pagination {
     margin-top: 30px;
@@ -89,6 +94,31 @@ div#datatable-buttons_info {
 }
 .tablesaw-columntoggle-btnwrap .btn-group {
   display: block;
+}
+
+// Key Tables
+table.dataTable th.focus,table.dataTable td.focus{
+  outline: 2px solid $primary !important;
+  outline-offset: -1px;
+  background-color: rgba($primary,0.15);
+}
+
+
+// Multi select table
+table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected {
+  background-color: $primary;
+}
+
+
+/* Responsive data table */
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+  box-shadow: 0 0 3px rgba(67, 89, 102, 0.2);
+  background-color: $success;
+}
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before {
+  background-color: $danger;
 }
 
 /* Responsive Table (Plugin) */
@@ -161,8 +191,8 @@ div#datatable-buttons_info {
     }
     input[type="checkbox"]:checked + label {
       &::after {
-        content: "\f122";
-        font-family: "Ionicons";
+        content: "\f00c";
+        font-family: 'FontAwesome';
       }
     }
     input[type="checkbox"]:disabled + label {
@@ -200,7 +230,7 @@ div#datatable-buttons_info {
   .btn-toolbar {
     display: block;
   }
-  .btn-group.float-right {
+  .btn-group.pull-right {
     float: right;
     .dropdown-menu {
       left: auto;
@@ -300,6 +330,19 @@ div#datatable-buttons_info {
   border-bottom: none;
 }
 
+.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-ascending button:after, .tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-descending button:after {
+  font-family: FontAwesome;
+  font-size: 10px;
+}
+
+.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-ascending button:after {
+  content: "\f176";
+}
+
+.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-descending button:after {
+  content: "\f175";
+}
+
 .tablesaw-bar .btn-select.btn-small:after, .tablesaw-bar .btn-select.btn-micro:after {
   font-size: 8px;
   padding-right: 10px;
@@ -335,10 +378,6 @@ div#datatable-buttons_info {
 
 .footable-detail-show {
   background-color: darken($light3, 5%);
-}
-
-.footable-row-detail {
-  //background-color: #F0F4F7;
 }
 
 .footable > thead > tr > th > span.footable-sort-indicator {

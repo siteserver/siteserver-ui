@@ -3,137 +3,132 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
+  <!-- #include file="head.html" -->
 </head>
 
 <body>
-
   <!-- #include file="header.html" -->
 
+  <div class="wrapper">
+    <div class="container-fluid">
 
-  <div class="container-fluid">
-
-    <!-- Page-Title -->
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-title-box">
-          <div class="btn-group float-right">
-            <ol class="breadcrumb hide-phone p-0 m-0">
-              <li class="breadcrumb-item">
-                <a href="#">SiteServer</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">Components</a>
-              </li>
-              <li class="breadcrumb-item active">Range Sliders</li>
-            </ol>
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group float-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">SiteServer</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Components</a>
+                </li>
+                <li class="breadcrumb-item active">Range Sliders</li>
+              </ol>
+            </div>
+            <h4 class="page-title">Range Sliders</h4>
           </div>
-          <h4 class="page-title">Range Sliders</h4>
         </div>
       </div>
-    </div>
-    <!-- end page title end breadcrumb -->
+      <!-- end page title end breadcrumb -->
 
 
-    <div class="row">
-      <div class="col-12">
+      <div class="row">
+        <div class="col-12">
 
-        <div class="card-box">
-          <h4 class="m-t-0 header-title">
-            <b>Ion Range Slider</b>
-          </h4>
-          <p class="text-muted m-b-30 font-13">
-            Cool, comfortable, responsive and easily customizable range slider
-          </p>
+          <div class="card-box">
+            <h4 class="m-t-0 header-title">
+              <b>Ion Range Slider</b>
+            </h4>
+            <p class="text-muted m-b-30 font-13">
+              Cool, comfortable, responsive and easily customizable range slider
+            </p>
 
-          <form class="form-horizontal">
-            <div class="form-group">
-              <label for="range_01" class="control-label">
-                <b>Default</b>
-                <span class="font-normal text-muted clearfix">Start without params</span>
-              </label>
-              <div class="m-b-20">
-                <input type="text" id="range_01">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="range_01" class="control-label">
+                  <b>Default</b>
+                  <span class="font-normal text-muted clearfix">Start without params</span>
+                </label>
+                <div class="m-b-20">
+                  <input type="text" id="range_01">
+                </div>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="range_02" class="control-label">
-                <b>Min-Max</b>
-                <span class="font-normal text-muted f-s-12 clearfix">Set min value, max value and start point</span>
-              </label>
-              <div class="m-b-20">
-                <input type="text" id="range_02">
+              <div class="form-group">
+                <label for="range_02" class="control-label">
+                  <b>Min-Max</b>
+                  <span class="font-normal text-muted f-s-12 clearfix">Set min value, max value and start point</span>
+                </label>
+                <div class="m-b-20">
+                  <input type="text" id="range_02">
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="range_03" class="control-label">
-                <b>Prefix</b>
-                <span class="font-normal text-muted f-s-12 clearfix">showing grid and adding prefix "$"</span>
-              </label>
-              <div class="m-b-20">
-                <input type="text" id="range_03">
+              <div class="form-group">
+                <label for="range_03" class="control-label">
+                  <b>Prefix</b>
+                  <span class="font-normal text-muted f-s-12 clearfix">showing grid and adding prefix "$"</span>
+                </label>
+                <div class="m-b-20">
+                  <input type="text" id="range_03">
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="range_04" class="control-label">
-                <b>Range</b>
-                <span class="font-normal text-muted f-s-12 clearfix">Set up range with negative values</span>
-              </label>
-              <div class="m-b-20">
-                <input type="text" id="range_04">
+              <div class="form-group">
+                <label for="range_04" class="control-label">
+                  <b>Range</b>
+                  <span class="font-normal text-muted f-s-12 clearfix">Set up range with negative values</span>
+                </label>
+                <div class="m-b-20">
+                  <input type="text" id="range_04">
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="range_05" class="control-label">
-                <b>Step</b>
-                <span class="font-normal text-muted f-s-12 clearfix">Using step 250</span>
-              </label>
-              <div class="m-b-20">
-                <input type="text" id="range_05">
+              <div class="form-group">
+                <label for="range_05" class="control-label">
+                  <b>Step</b>
+                  <span class="font-normal text-muted f-s-12 clearfix">Using step 250</span>
+                </label>
+                <div class="m-b-20">
+                  <input type="text" id="range_05">
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="range_06" class="control-label">
-                <b>Custom Values</b>
-                <span class="font-normal text-muted f-s-12 clearfix">Using any strings as values</span>
-              </label>
-              <div class="m-b-20">
-                <input type="text" id="range_06">
+              <div class="form-group">
+                <label for="range_06" class="control-label">
+                  <b>Custom Values</b>
+                  <span class="font-normal text-muted f-s-12 clearfix">Using any strings as values</span>
+                </label>
+                <div class="m-b-20">
+                  <input type="text" id="range_06">
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="range_07" class="control-label">
-                <b>Prettify Numbers</b>
-                <span class="font-normal text-muted f-s-12 clearfix">Prettify enabled. Much better!</span>
-              </label>
-              <div class="m-b-20">
-                <input type="text" id="range_07">
+              <div class="form-group">
+                <label for="range_07" class="control-label">
+                  <b>Prettify Numbers</b>
+                  <span class="font-normal text-muted f-s-12 clearfix">Prettify enabled. Much better!</span>
+                </label>
+                <div class="m-b-20">
+                  <input type="text" id="range_07">
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="range_08" class="control-label">
-                <b>Disabled</b>
-                <span class="font-normal text-muted f-s-12 clearfix">Lock slider by using disable option</span>
-              </label>
-              <div class="m-b-20">
-                <input type="text" id="range_08">
+              <div class="form-group">
+                <label for="range_08" class="control-label">
+                  <b>Disabled</b>
+                  <span class="font-normal text-muted f-s-12 clearfix">Lock slider by using disable option</span>
+                </label>
+                <div class="m-b-20">
+                  <input type="text" id="range_08">
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Row -->
+      <!-- Row -->
 
+    </div>
+    <!-- end container -->
   </div>
-  <!-- end container -->
+  <!-- end wrapper -->
 
 
   <!-- #include file="footer.html" -->
@@ -141,3 +136,4 @@
 </body>
 
 </html>
+<!-- #include file="foot.html" -->

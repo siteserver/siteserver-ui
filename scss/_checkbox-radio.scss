@@ -2,6 +2,16 @@
    Checkbox and Radios
 ============= */
 
+//Bootstrap Checkbox
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-control-input:checked~.custom-control-label::before,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: $primary;
+}
+
+
+//Custom Checkbox
+
 .checkbox {
   //padding-left: 20px;
   label {
@@ -60,7 +70,7 @@
   input[type="checkbox"]:checked + label {
     &::after {
       content: "\f122";
-      font-family: "Ionicons";
+      font-family: Ionicons;
     }
   }
   input[type="checkbox"]:disabled + label {

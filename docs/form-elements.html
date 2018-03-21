@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="shortcut icon" href="assets/images/favicon.png">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/siteserver.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
   <!-- Navigation Bar-->
 <header id="topnav">
   <div class="topbar-main">
@@ -21,23 +21,13 @@
 
       <!-- Logo container-->
       <div class="logo">
-        <!-- Text Logo -->
-        <a href="index.html" class="logo">
-          <span class="logo-small">
-            <i class="mdi mdi-radar"></i>
-          </span>
-          <span class="logo-large">
-            <i class="mdi mdi-radar"></i> SiteServer</span>
-        </a>
         <!-- Image Logo -->
-        <!--<a href="index.html" class="logo">-->
-        <!--<img src="assets/images/logo_dark.png" alt="" height="24" class="logo-lg">-->
-        <!--<img src="assets/images/logo_sm.png" alt="" height="24" class="logo-sm">-->
-        <!--</a>-->
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo_dark.png" alt="" class="logo-lg">
+        </a>
 
       </div>
       <!-- End Logo container-->
-
 
       <div class="menu-extras topbar-custom">
 
@@ -55,7 +45,7 @@
             <!-- End mobile menu toggle-->
           </li>
           <li class="list-inline-item dropdown notification-list">
-            <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
               aria-expanded="false">
               <i class="mdi mdi-bell noti-icon"></i>
               <span class="badge badge-pink noti-icon-badge">4</span>
@@ -107,7 +97,7 @@
           </li>
 
           <li class="list-inline-item dropdown notification-list">
-            <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+            <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
               aria-expanded="false">
               <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
             </a>
@@ -121,7 +111,7 @@
 
               <!-- item-->
               <a href="javascript:void(0);" class="dropdown-item notify-item">
-                <i class="mdi mdi-account-star-variant"></i>
+                <i class="mdi mdi-account"></i>
                 <span>Profile</span>
               </a>
 
@@ -201,9 +191,6 @@
               <li>
                 <a href="ui-typography.html">Typography</a>
               </li>
-              <li>
-                <a href="icons-ionicons.html">Icons</a>
-              </li>
             </ul>
           </li>
 
@@ -236,6 +223,26 @@
             <a href="#">
               <i class="ti-spray"></i>Other</a>
             <ul class="submenu">
+              <li class="has-submenu">
+                <a href="#">Icons</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="icons-materialdesign.html">Material Design</a>
+                  </li>
+                  <li>
+                    <a href="icons-themifyicon.html">Themify Icons</a>
+                  </li>
+                  <li>
+                    <a href="icons-ionicons.html">Ion Icons</a>
+                  </li>
+                  <li>
+                    <a href="icons-fontawesome.html">Font awesome</a>
+                  </li>
+                  <li>
+                    <a href="icons-weather.html">Weather Icons</a>
+                  </li>
+                </ul>
+              </li>
 
               <li class="has-submenu">
                 <a href="#">Forms</a>
@@ -248,6 +255,9 @@
                   </li>
                   <li>
                     <a href="form-validation.html">Form Validation</a>
+                  </li>
+                  <li>
+                    <a href="form-wizard.html">Form Wizard</a>
                   </li>
                   <li>
                     <a href="form-wysiwig.html">WYSIWYG Editor</a>
@@ -314,6 +324,18 @@
                   </li>
                   <li>
                     <a href="chart-other.html">Other Chart</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="has-submenu">
+                <a href="#">Maps</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="map-google.html"> Google Map</a>
+                  </li>
+                  <li>
+                    <a href="map-vector.html"> Vector Map</a>
                   </li>
                 </ul>
               </li>
@@ -436,526 +458,620 @@
 </header>
 <!-- End Navigation Bar-->
 
+  <div class="wrapper">
+    <div class="container-fluid">
 
-  <div class="container-fluid">
-
-    <!-- Page-Title -->
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-title-box">
-          <div class="btn-group float-right">
-            <ol class="breadcrumb hide-phone p-0 m-0">
-              <li class="breadcrumb-item">
-                <a href="#">SiteServer</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">Forms</a>
-              </li>
-              <li class="breadcrumb-item active">Form Elements</li>
-            </ol>
-          </div>
-          <h4 class="page-title">Form Elements</h4>
-        </div>
-      </div>
-    </div>
-    <!-- end page title end breadcrumb -->
-
-    <div class="row">
-      <div class="col-12">
-        <div class="card-box">
-          <h4 class="m-t-0 header-title">
-            <b>Input Types</b>
-          </h4>
-          <p class="text-muted m-b-30 font-14">
-            Most common form control, text-based input fields. Includes support for all HTML5 types:
-            <code>text</code>,
-            <code>password</code>,
-            <code>datetime</code>,
-            <code>datetime-local</code>,
-            <code>date</code>,
-            <code>month</code>,
-            <code>time</code>,
-            <code>week</code>,
-            <code>number</code>,
-            <code>email</code>,
-            <code>url</code>,
-            <code>search</code>,
-            <code>tel</code>, and
-            <code>color</code>.
-          </p>
-
-          <div class="row">
-            <div class="col-12">
-              <div class="p-20">
-                <form class="form-horizontal" role="form">
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Text</label>
-                    <div class="col-10">
-                      <input type="text" class="form-control" value="Some text value...">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label" for="example-email">Email</label>
-                    <div class="col-10">
-                      <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Password</label>
-                    <div class="col-10">
-                      <input type="password" class="form-control" value="password">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Placeholder</label>
-                    <div class="col-10">
-                      <input type="text" class="form-control" placeholder="placeholder">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Text area</label>
-                    <div class="col-10">
-                      <textarea class="form-control" rows="5"></textarea>
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Readonly</label>
-                    <div class="col-10">
-                      <input type="text" class="form-control" readonly="" value="Readonly value">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Disabled</label>
-                    <div class="col-10">
-                      <input type="text" class="form-control" disabled="" value="Disabled value">
-                    </div>
-                  </div>
-
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Static control</label>
-                    <div class="col-10">
-                      <p class="form-control-static">email@example.com</p>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Helping text</label>
-                    <div class="col-10">
-                      <input type="text" class="form-control" placeholder="Helping text">
-                      <span class="help-block">
-                        <small>A block of help text that breaks onto a new line and may extend beyond one line.</small>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Input Select</label>
-                    <div class="col-10">
-                      <select class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                      <h6>Multiple select</h6>
-                      <select multiple class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Default file input</label>
-                    <div class="col-10">
-                      <input type="file" class="form-control">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Date</label>
-                    <div class="col-10">
-                      <input class="form-control" type="date" name="date">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Month</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="month" name="month">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Time</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="time" name="time">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Week</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="week" name="week">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Number</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="number" name="number">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">URL</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="url" name="url">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Search</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="search" name="search">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Tel</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="tel" name="tel">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Color</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="color" name="color">
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <label class="col-2 col-form-label">Range</label>
-                    <div class="col-md-10">
-                      <input class="form-control" type="range" name="range" min="0" max="10">
-                    </div>
-                  </div>
-
-                </form>
-              </div>
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group float-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">SiteServer</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Forms</a>
+                </li>
+                <li class="breadcrumb-item active">Form Elements</li>
+              </ol>
             </div>
-
+            <h4 class="page-title">Form Elements</h4>
           </div>
-          <!-- end row -->
-
         </div>
-        <!-- end card-box -->
       </div>
-      <!-- end col -->
-    </div>
-    <!-- end row -->
+      <!-- end page title end breadcrumb -->
 
+      <div class="row">
+        <div class="col-12">
+          <div class="card-box">
+            <h4 class="m-t-0 header-title">Input Types</h4>
+            <p class="text-muted m-b-30 font-14">
+              Most common form control, text-based input fields. Includes support for all HTML5 types:
+              <code>text</code>,
+              <code>password</code>,
+              <code>datetime</code>,
+              <code>datetime-local</code>,
+              <code>date</code>,
+              <code>month</code>,
+              <code>time</code>,
+              <code>week</code>,
+              <code>number</code>,
+              <code>email</code>,
+              <code>url</code>,
+              <code>search</code>,
+              <code>tel</code>, and
+              <code>color</code>.
+            </p>
 
-    <div class="row">
-      <div class="col-12">
-        <div class="card-box">
-          <h4 class="m-t-0 header-title">
-            <b>Input States</b>
-          </h4>
-          <p class="text-muted m-b-30 font-14">
-            Bootstrap includes validation styles for error, warning, and success states on form controls.
-          </p>
-
-          <div class="p-20">
-            <form class="form-horizontal" role="form">
-
-              <div class="form-group has-success">
-                <label class="form-control-label" for="inputSuccess1">Input with success</label>
-                <input type="text" class="form-control form-control-success" id="inputSuccess1">
-                <div class="form-control-feedback">Success! You've done it.</div>
-                <small class="form-text text-muted">Example help text that remains unchanged.</small>
-              </div>
-              <div class="form-group has-warning">
-                <label class="form-control-label" for="inputWarning1">Input with warning</label>
-                <input type="text" class="form-control form-control-warning" id="inputWarning1">
-                <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
-                <small class="form-text text-muted">Example help text that remains unchanged.</small>
-              </div>
-              <div class="form-group has-danger">
-                <label class="form-control-label" for="inputDanger1">Input with danger</label>
-                <input type="text" class="form-control form-control-danger" id="inputDanger1">
-                <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
-                <small class="form-text text-muted">Example help text that remains unchanged.</small>
-              </div>
-
-            </form>
-          </div>
-
-        </div>
-        <!-- end card-box -->
-      </div>
-      <!-- end col -->
-    </div>
-    <!-- end row -->
-
-
-    <div class="row">
-      <div class="col-12">
-        <div class="card-box">
-          <h4 class="m-t-0 header-title">
-            <b>Input Sizes & Group</b>
-          </h4>
-          <p class="text-muted m-b-30 font-14">
-            Set heights using classes like
-            <code>.input-lg</code>, and set widths using grid column classes like
-            <code>.col-lg-*</code>.
-          </p>
-
-          <div class="p-20">
-            <form role="form" class="form-horizontal">
-              <div class="form-group row">
-                <label class="col-2 col-form-label" for="example-input-small">Small</label>
-                <div class="col-10">
-                  <input type="text" id="example-input-small" name="example-input-small" class="form-control input-sm" placeholder=".input-sm">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-2 col-form-label" for="example-input-normal">Normal</label>
-                <div class="col-10">
-                  <input type="text" id="example-input-normal" name="example-input-normal" class="form-control" placeholder="Normal">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-2 col-form-label" for="example-input-large">Large</label>
-                <div class="col-10">
-                  <input type="text" id="example-input-large" name="example-input-large" class="form-control input-lg" placeholder=".input-lg">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-2 col-form-label">Grid Sizes</label>
-                <div class="col-10">
-                  <input type="text" class="form-control" placeholder=".col-sm-4">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-2 col-form-label">Static</label>
-                <div class="col-10">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <i class="fa fa-user"></i>
-                    </span>
-                    <input type="text" id="example-input1-group1" name="example-input1-group1" class="form-control" placeholder="Username">
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-2 col-form-label">Dropdowns</label>
-                <div class="col-10">
-                  <div class="input-group">
-                    <div class="input-group-btn">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="overflow: hidden; position: relative;">Action
-                        <span class="caret"></span>
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+            <div class="row">
+              <div class="col-12">
+                <div class="p-20">
+                  <form class="form-horizontal" role="form">
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Text</label>
+                      <div class="col-10">
+                        <input type="text" class="form-control" value="Some text value...">
                       </div>
                     </div>
-                    <input type="text" id="example-input1-group3" name="example-input1-group3" class="form-control" placeholder="Username">
-                  </div>
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label" for="example-email">Email</label>
+                      <div class="col-10">
+                        <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Password</label>
+                      <div class="col-10">
+                        <input type="password" class="form-control" value="password">
+                      </div>
+                    </div>
 
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Placeholder</label>
+                      <div class="col-10">
+                        <input type="text" class="form-control" placeholder="placeholder">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Text area</label>
+                      <div class="col-10">
+                        <textarea class="form-control" rows="5"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Readonly</label>
+                      <div class="col-10">
+                        <input type="text" class="form-control" readonly="" value="Readonly value">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Disabled</label>
+                      <div class="col-10">
+                        <input type="text" class="form-control" disabled="" value="Disabled value">
+                      </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Static control</label>
+                      <div class="col-10">
+                        <p class="form-control-static">email@example.com</p>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Helping text</label>
+                      <div class="col-10">
+                        <input type="text" class="form-control" placeholder="Helping text">
+                        <span class="help-block">
+                          <small>A block of help text that breaks onto a new line and may extend beyond one line.</small>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Input Select</label>
+                      <div class="col-10">
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                        <h6>Multiple select</h6>
+                        <select multiple class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Default file input</label>
+                      <div class="col-10">
+                        <input type="file" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Date</label>
+                      <div class="col-10">
+                        <input class="form-control" type="date" name="date">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Month</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="month" name="month">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Time</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="time" name="time">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Week</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="week" name="week">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Number</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="number" name="number">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">URL</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="url" name="url">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Search</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="search" name="search">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Tel</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="tel" name="tel">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Color</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="color" name="color">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-2 col-form-label">Range</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="range" name="range" min="0" max="10">
+                      </div>
+                    </div>
+
+                  </form>
                 </div>
               </div>
 
-              <div class="form-group row">
-                <label class="col-2 col-form-label">Buttons</label>
-                <div class="col-10">
-                  <div class="input-group">
-                    <input type="email" id="example-input2-group2" name="example-input2-group2" class="form-control" placeholder="Email">
-                    <span class="input-group-btn">
-                      <button type="button" class="btn btn-primary">Submit</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <!-- end row -->
 
-
-            </form>
           </div>
+          <!-- end card-box -->
         </div>
-        <!-- end card-box -->
+        <!-- end col -->
       </div>
-      <!-- end col -->
-    </div>
-    <!-- end row -->
+      <!-- end row -->
 
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card-box">
-          <h4 class="m-t-0 m-b-30 header-title">Basic Example</h4>
+      <div class="row">
+        <div class="col-12">
+          <div class="card-box">
+            <div class="row">
+              <div class="col-md-6">
+                <h4 class="m-t-0 header-title">Select menu</h4>
+                <p class="text-muted m-b-30 font-14">
+                  Custom
+                  <code class="highlighter-rouge">&lt;select&gt;</code> menus need only a custom class,
+                  <code class="highlighter-rouge">.custom-select</code> to trigger the custom styles.
+                </p>
 
-          <form role="form">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <div class="checkbox checkbox-primary">
-                <input id="checkbox1" type="checkbox">
-                <label for="checkbox1">
-                  Remember me
-                </label>
+                <select class="custom-select mt-3">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <h4 class="header-title">Checkboxes and radios</h4>
+                <div class="mt-3">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                  </div>
+                </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-danger">Submit</button>
-          </form>
+
+          </div>
+          <!-- end card-box -->
         </div>
+        <!-- end col -->
       </div>
-      <!-- end col -->
+      <!-- end row -->
 
-      <div class="col-md-6">
-        <div class="card-box">
-          <h4 class="m-t-0 m-b-30 header-title">Horizontal form</h4>
 
-          <form class="form-horizontal" role="form">
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-3 col-form-label">Email</label>
-              <div class="col-9">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-              </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card-box">
+            <h4 class="m-t-0 header-title">Input Sizes & Group</h4>
+            <p class="text-muted m-b-30 font-14">
+              Set heights using classes like
+              <code>.input-lg</code>, and set widths using grid column classes like
+              <code>.col-lg-*</code>.
+            </p>
+
+            <div class="p-20">
+              <form role="form" class="form-horizontal">
+                <div class="form-group row">
+                  <label class="col-2 col-form-label" for="example-input-small">Small</label>
+                  <div class="col-10">
+                    <input type="text" id="example-input-small" name="example-input-small" class="form-control form-control-sm" placeholder=".input-sm">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-2 col-form-label" for="example-input-normal">Normal</label>
+                  <div class="col-10">
+                    <input type="text" id="example-input-normal" name="example-input-normal" class="form-control" placeholder="Normal">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-2 col-form-label" for="example-input-large">Large</label>
+                  <div class="col-10">
+                    <input type="text" id="example-input-large" name="example-input-large" class="form-control form-control-lg" placeholder=".input-lg">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-2 col-form-label">Grid Sizes</label>
+                  <div class="col-10">
+                    <input type="text" class="form-control" placeholder=".col-sm-4">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-2 col-form-label">Static</label>
+                  <div class="col-10">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-2 col-form-label">Dropdowns</label>
+                  <div class="col-10">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <button class="btn btn-primary waves-effect waves-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">Dropdown</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div role="separator" class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-2 col-form-label">Buttons</label>
+                  <div class="col-10">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-dark waves-effect waves-light" type="button">Button</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </form>
             </div>
-            <div class="form-group row">
-              <label for="inputPassword3" class="col-3 col-form-label">Password</label>
-              <div class="col-9">
-                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+          <!-- end card-box -->
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- end row -->
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-box">
+            <h4 class="m-t-0 m-b-30 header-title">Basic Example</h4>
+
+            <form role="form">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputPassword4" class="col-3 col-form-label">Re Password</label>
-              <div class="col-9">
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Retype Password">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
               </div>
-            </div>
-            <div class="form-group row">
-              <div class="offset-3 col-9">
-                <div class="checkbox checkbox-primary">
-                  <input id="checkbox2" type="checkbox">
-                  <label for="checkbox2">
-                    Check me out !
+              <div class="form-group">
+                <div class="checkbox">
+                  <input id="checkbox0" type="checkbox">
+                  <label for="checkbox0">
+                    Check me out
                   </label>
                 </div>
               </div>
-            </div>
-            <div class="form-group m-b-0 row">
-              <div class="offset-3 col-9">
-                <button type="submit" class="btn btn-info">Sign in</button>
-              </div>
-            </div>
-          </form>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
         </div>
-      </div>
+        <!-- end col -->
 
-    </div>
-    <!-- end row -->
+        <div class="col-md-6">
+          <div class="card-box">
+            <h4 class="m-t-0 m-b-30 header-title">Horizontal form</h4>
 
-
-    <!-- Inline Form -->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card-box">
-          <h4 class="m-t-0 header-title">
-            <b>Inline Form</b>
-          </h4>
-          <p class="text-muted m-b-30 font-13">
-            Add
-            <code>.form-inline</code> to your form (which doesn't have to be a
-            <code>&lt;form&gt;</code>) for left-aligned and inline-block controls.
-            <strong>This only applies to forms within viewports that are at least 768px wide.</strong>
-          </p>
-          <div class="row m-b-30">
-            <div class="col-sm-12">
-              <h6>
-                <b>Style 1</b>
-              </h6>
-
-              <form class="form-inline" role="form">
-                <div class="form-group">
-                  <label class="sr-only" for="exampleInputEmail21">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail21" placeholder="Enter email">
+            <form class="form-horizontal" role="form">
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-3 col-form-label">Email</label>
+                <div class="col-9">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                 </div>
-
-                <div class="form-group m-l-10">
-                  <label class="sr-only" for="exampleInputPassword2">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword3" class="col-3 col-form-label">Password</label>
+                <div class="col-9">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                 </div>
-                <div class="form-group m-l-10">
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword5" class="col-3 col-form-label">Re Password</label>
+                <div class="col-9">
+                  <input type="password" class="form-control" id="inputPassword5" placeholder="Retype Password">
+                </div>
+              </div>
+              <div class="form-group row justify-content-end">
+                <div class=" col-9">
                   <div class="checkbox checkbox-primary">
-                    <input id="checkbox3" type="checkbox">
-                    <label for="checkbox3">
-                      Remember me
+                    <input id="checkbox2" type="checkbox">
+                    <label for="checkbox2">
+                      Check me out !
                     </label>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-success m-l-10 btn-md">Sign in</button>
-              </form>
-            </div>
-
-
+              </div>
+              <div class="form-group mb-0 justify-content-end row">
+                <div class="col-9">
+                  <button type="submit" class="btn btn-info waves-effect waves-light">Sign in</button>
+                </div>
+              </div>
+            </form>
           </div>
+        </div>
 
-          <div class="row">
+      </div>
+      <!-- end row -->
 
-            <div class="col-sm-12">
-              <h6>
-                <b>Style 2</b>
-              </h6>
 
-              <form class="form-inline">
-                <div class="form-group m-r-10">
-                  <label for="exampleInputName2" class="mr-sm-2">Name</label>
-                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                </div>
-                <div class="form-group m-r-10">
-                  <label for="exampleInputEmail2" class="mr-sm-2">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-                </div>
-                <button type="submit" class="btn btn-primary btn-md">
-                  Send invitation
-                </button>
-              </form>
+      <!-- Inline Form -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-box">
+            <h4 class="m-t-0 header-title">Inline Form</h4>
+            <p class="text-muted m-b-30 font-13">
+              Add
+              <code>.form-inline</code> to your form (which doesn't have to be a
+              <code>&lt;form&gt;</code>) for left-aligned and inline-block controls.
+              <strong>This only applies to forms within viewports that are at least 768px wide.</strong>
+            </p>
+            <div class="row m-b-30">
+              <div class="col-sm-12">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label for="staticEmail2" class="sr-only">Email</label>
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+                  </div>
+                  <div class="form-group mx-sm-3">
+                    <label for="inputPassword2" class="sr-only">Password</label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Confirm identity</button>
+                </form>
+              </div>
+
             </div>
 
+            <div class="row">
+
+              <div class="col-sm-12">
+                <h6 class="font-13 mt-4">Auto-sizing</h6>
+
+                <form>
+                  <div class="form-row align-items-center">
+                    <div class="col-auto">
+                      <label class="sr-only" for="inlineFormInput">Name</label>
+                      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                    </div>
+                    <div class="col-auto">
+                      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                        <label class="form-check-label" for="autoSizingCheck">
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
+      <!-- end row -->
+
+
+
+      <!-- Form row -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-box">
+            <h4 class="m-t-0 header-title">Form row</h4>
+            <p class="text-muted m-b-30 font-13">
+              You may also swap
+              <code class="highlighter-rouge">.row</code> for
+              <code class="highlighter-rouge">.form-row</code>, a variation of our standard grid row that overrides the default column gutters for tighter
+              and more compact layouts.
+            </p>
+
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4" class="col-form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4" class="col-form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress" class="col-form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2" class="col-form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity" class="col-form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState" class="col-form-label">State</label>
+                  <select id="inputState" class="form-control">Choose</select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip" class="col-form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Check me out
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
     </div>
-    <!-- end row -->
-
-
+    <!-- end container -->
   </div>
-  <!-- end container -->
+  <!-- end wrapper -->
 
 
-  <!-- #include file="footer.html" -->
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        2013 - 2018 © SiteServer CMS
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
 
 </body>
 
 </html>
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<!-- Popper for Bootstrap -->
+<!-- Tether for Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+
+<!--Chartist Chart-->
+<script src="../plugins/chartist/dist/chartist.min.js"></script>
+<script src="assets/pages/jquery.chartist.init.js"></script>
+
+<!-- App js -->
+<script src="assets/js/jquery.core.js"></script>
+<script src="assets/js/jquery.app.js"></script>

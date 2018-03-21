@@ -3,236 +3,231 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/siteserver.css" rel="stylesheet" type="text/css" />
+  <!-- #include file="head.html" -->
 </head>
 
 <body>
-
   <!-- #include file="header.html" -->
 
+  <div class="wrapper">
+    <div class="container-fluid">
 
-  <div class="container-fluid">
-
-    <!-- Page-Title -->
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-title-box">
-          <div class="btn-group float-right">
-            <ol class="breadcrumb hide-phone p-0 m-0">
-              <li class="breadcrumb-item">
-                <a href="#">SiteServer</a>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">Charts</a>
-              </li>
-              <li class="breadcrumb-item active">Chartjs Charts</li>
-            </ol>
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="btn-group float-right">
+              <ol class="breadcrumb hide-phone p-0 m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">SiteServer</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Charts</a>
+                </li>
+                <li class="breadcrumb-item active">Chartjs Charts</li>
+              </ol>
+            </div>
+            <h4 class="page-title">Chartjs Charts</h4>
           </div>
-          <h4 class="page-title">Chartjs Charts</h4>
         </div>
       </div>
+      <!-- end page title end breadcrumb -->
+
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="portlet">
+            <!-- /primary heading -->
+            <div class="portlet-heading">
+              <h3 class="portlet-title text-dark">
+                Line Chart
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#portlet1">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="portlet1" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                <canvas id="lineChart" height="300"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="portlet">
+            <!-- /primary heading -->
+            <div class="portlet-heading">
+              <h3 class="portlet-title text-dark">
+                Donut Chart
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#portlet2">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="portlet2" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                <canvas id="doughnut" height="300"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="portlet">
+            <!-- /primary heading -->
+            <div class="portlet-heading">
+              <h3 class="portlet-title text-dark">
+                Pie Chart
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#portlet3">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="portlet3" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                <canvas id="pie" height="300"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="portlet">
+            <!-- /primary heading -->
+            <div class="portlet-heading">
+              <h3 class="portlet-title text-dark">
+                Bar Chart
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#portlet4">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="portlet4" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                <canvas id="bar" height="300"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="portlet">
+            <!-- /primary heading -->
+            <div class="portlet-heading">
+              <h3 class="portlet-title text-dark">
+                Radar Chart
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#portlet7">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="portlet7" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                <canvas id="radar" height="300"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="portlet">
+            <!-- /primary heading -->
+            <div class="portlet-heading">
+              <h3 class="portlet-title text-dark">
+                Polar area Chart
+              </h3>
+              <div class="portlet-widgets">
+                <a href="javascript:;" data-toggle="reload">
+                  <i class="ion-refresh"></i>
+                </a>
+                <span class="divider"></span>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#portlet5">
+                  <i class="ion-minus-round"></i>
+                </a>
+                <span class="divider"></span>
+                <a href="#" data-toggle="remove">
+                  <i class="ion-close-round"></i>
+                </a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="portlet5" class="panel-collapse collapse show">
+              <div class="portlet-body">
+                <canvas id="polarArea" height="300"> </canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end row -->
+
     </div>
-    <!-- end page title end breadcrumb -->
-
-
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="portlet">
-          <!-- /primary heading -->
-          <div class="portlet-heading">
-            <h3 class="portlet-title text-dark">
-              Line Chart
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#portlet1">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="portlet1" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              <canvas id="lineChart" height="300"></canvas>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="portlet">
-          <!-- /primary heading -->
-          <div class="portlet-heading">
-            <h3 class="portlet-title text-dark">
-              Donut Chart
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#portlet2">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="portlet2" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              <canvas id="doughnut" height="300"></canvas>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="portlet">
-          <!-- /primary heading -->
-          <div class="portlet-heading">
-            <h3 class="portlet-title text-dark">
-              Pie Chart
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#portlet3">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="portlet3" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              <canvas id="pie" height="300"></canvas>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="portlet">
-          <!-- /primary heading -->
-          <div class="portlet-heading">
-            <h3 class="portlet-title text-dark">
-              Bar Chart
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#portlet4">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="portlet4" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              <canvas id="bar" height="300"></canvas>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="portlet">
-          <!-- /primary heading -->
-          <div class="portlet-heading">
-            <h3 class="portlet-title text-dark">
-              Radar Chart
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#portlet7">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="portlet7" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              <canvas id="radar" height="300"></canvas>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="portlet">
-          <!-- /primary heading -->
-          <div class="portlet-heading">
-            <h3 class="portlet-title text-dark">
-              Polar area Chart
-            </h3>
-            <div class="portlet-widgets">
-              <a href="javascript:;" data-toggle="reload">
-                <i class="ion-refresh"></i>
-              </a>
-              <span class="divider"></span>
-              <a data-toggle="collapse" data-parent="#accordion1" href="#portlet5">
-                <i class="ion-minus-round"></i>
-              </a>
-              <span class="divider"></span>
-              <a href="#" data-toggle="remove">
-                <i class="ion-close-round"></i>
-              </a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div id="portlet5" class="panel-collapse collapse show">
-            <div class="portlet-body">
-              <canvas id="polarArea" height="300"> </canvas>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- end row -->
-
+    <!-- end container -->
   </div>
-  <!-- end container -->
+  <!-- end wrapper -->
 
 
   <!-- #include file="footer.html" -->
@@ -240,3 +235,4 @@
 </body>
 
 </html>
+<!-- #include file="foot.html" -->
