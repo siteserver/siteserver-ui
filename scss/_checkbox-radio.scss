@@ -69,8 +69,8 @@
   }
   input[type="checkbox"]:checked + label {
     &::after {
-      content: "\f122";
-      font-family: Ionicons;
+      content: "\f00c";
+      font-family: 'FontAwesome';
     }
   }
   input[type="checkbox"]:disabled + label {

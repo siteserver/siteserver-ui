@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/siteserver.svg?style=flat-square)](https://www.npmjs.org/package/siteserver)
 [![npm downloads](https://img.shields.io/npm/dm/siteserver.svg?style=flat-square)](http://npm-stat.com/charts.html?package=siteserver)
 
-SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。
+SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.1之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。
 
 ## 介绍
 
@@ -77,7 +77,7 @@ Sass是一种CSS预处理器，它扩展了CSS语言，添加了允许变量、�
 
 | 文件          | 说明                                           |
 | ------------- | :--------------------------------------------- |
-| bootstrap.css | Bootstrap v4.0.0，所有页面都使用了此核心文件。 |
+| bootstrap.css | Bootstrap v4.1.0，所有页面都使用了此核心文件。 |
 | style.scss    | sass版本样式文件                               |
 | style.css     | css版本样式文件                                |
 | style.min.css | css压缩版本样式文件，生产环境使用              |

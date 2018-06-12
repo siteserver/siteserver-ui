@@ -353,12 +353,12 @@
       vertical-align: top;
     }
     .navigation-menu > li .submenu > li.has-submenu > a:after {
-      content: "\f3d3";
-      font-family: Ionicons;
+      content: "\e649";
+      font-family: "themify";
       position: absolute;
       right: 20px;
-      top: 8px;
-      font-size: 16px;
+      top: 13px;
+      font-size: 10px;
     }
     .navigation-menu > li .submenu > li .submenu {
       left: 100%;

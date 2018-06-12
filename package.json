@@ -1,7 +1,7 @@
 {
   "name": "siteserver",
-  "version": "1.0.5",
-  "description": "SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。",
+  "version": "1.0.6",
+  "description": "SiteServer CMS 响应式用户交互组件库，采用Sass编写，基于HTML5以及CSS3，完全响应式。",
   "homepage": "https://github.com/siteserver/siteserver-ui",
   "dependencies": {},
   "devDependencies": {

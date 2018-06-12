@@ -1,87 +1,77 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>SiteServer CMS - 响应式用户交互组件库</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="SiteServer CMS 响应式用户交互组件库" name="description" />
+        <meta content="SiteServer CMS" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>SiteServer.UI - SiteServer CMS 响应式用户交互组件库</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta content="SiteServer CMS 响应式用户交互组件库，建立在 Bootstrap 最新版本 v4.0之上，采用Sass编写，基于HTML5以及CSS3，完全响应式。" name="description" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="shortcut icon" href="assets/images/favicon.png">
-<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="assets/css/ionicons.min.css" rel="stylesheet" type="text/css" />
-<link href="assets/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-<link href="assets/css/siteserver.min.css" rel="stylesheet" type="text/css" />
-</head>
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-<body>
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/siteserver.min.css" rel="stylesheet" type="text/css" />
 
-  <div class="ex-page-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <svg class="svg-box" width="380px" height="500px" viewBox="0 0 837 1045" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-              <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#3bafda"
-                stroke-width="6" sketch:type="MSShapeGroup"></path>
-              <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#7266ba"
-                stroke-width="6" sketch:type="MSShapeGroup"></path>
-              <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#f76397"
-                stroke-width="6" sketch:type="MSShapeGroup"></path>
-              <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#00b19d"
-                stroke-width="6" sketch:type="MSShapeGroup"></path>
-              <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z" id="Polygon-5" stroke="#ffaa00"
-                stroke-width="6" sketch:type="MSShapeGroup"></path>
-            </g>
-          </svg>
-        </div>
+        <script src="assets/js/modernizr.min.js"></script>
 
-        <div class="col-lg-6">
-          <div class="message-box">
-            <h1 class="m-b-0">500</h1>
-            <h4>Internal Server Error.</h4>
-            <div class="buttons-con">
-              <div class="action-link-wrap">
-                <a onclick="history.back(-1)" href="" class="btn btn-custom btn-primary waves-effect waves-light m-t-20">Go Back</a>
-                <a href="" class="btn btn-custom btn-primary waves-effect waves-light m-t-20">Go to Home Page</a>
-              </div>
+    </head>
+    <body>
+
+        <div class="ex-page-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <svg class="svg-box" width="380px" height="500px" viewBox="0 0 837 1045" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                               sketch:type="MSPage">
+                                <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z"
+                                      id="Polygon-1" stroke="#3bafda" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                                <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z"
+                                      id="Polygon-2" stroke="#7266ba" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                                <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z"
+                                      id="Polygon-3" stroke="#f76397" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                                <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z"
+                                      id="Polygon-4" stroke="#00b19d" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                                <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z"
+                                      id="Polygon-5" stroke="#ffaa00" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="message-box">
+                            <h1 class="m-b-0">500</h1>
+                            <h4>Internal Server Error.</h4>
+                            <div class="buttons-con">
+                                <div class="action-link-wrap">
+                                    <a onclick="history.back(-1)" href="" class="btn btn-custom btn-primary waves-effect waves-light m-t-20">Go Back</a>
+                                    <a href="" class="btn btn-custom btn-primary waves-effect waves-light m-t-20">Go to Home Page</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        2013 - 2018 © SiteServer CMS
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- End Footer -->
 
-</body>
 
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap --><!-- Tether for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+    </body>
 </html>
-<!-- jQuery  -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<!-- Popper for Bootstrap -->
-<!-- Tether for Bootstrap -->
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/waves.js"></script>
-<script src="assets/js/jquery.slimscroll.js"></script>
-<script src="assets/js/jquery.scrollTo.min.js"></script>
-
-<!--Chartist Chart-->
-<script src="../plugins/chartist/dist/chartist.min.js"></script>
-<script src="assets/pages/jquery.chartist.init.js"></script>
-
-<!-- App js -->
-<script src="assets/js/jquery.core.js"></script>
-<script src="assets/js/jquery.app.js"></script>
