@@ -1,6 +1,6 @@
 {
   "name": "siteserver",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "SiteServer CMS 响应式用户交互组件库，采用Sass编写，基于HTML5以及CSS3，完全响应式。",
   "homepage": "https://github.com/siteserver/siteserver-ui",
   "dependencies": {},
