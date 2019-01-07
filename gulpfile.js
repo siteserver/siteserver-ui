@@ -8,7 +8,6 @@ var rename = require("gulp-rename");
 var minify = require('gulp-minifier');
 var replace = require('gulp-replace');
 var header = require('gulp-header');
-var runSequence = require('run-sequence');
 var del = require('del');
 var json = JSON.parse(fs.readFileSync('./package.json'));
 
@@ -45,6 +44,4 @@ gulp.task('build-docs-assets', function () {
   return gulp.src('./dist/**').pipe(gulp.dest('./docs/assets/css'));
 });
 
-gulp.task('build', function (callback) {
-  runSequence('build-clean', 'build-css', 'build-min', 'build-docs-assets', callback);
-});
+gulp.task('build', gulp.series('build-clean', 'build-css', 'build-min', 'build-docs-assets'));
