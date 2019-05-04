@@ -1,19 +1,19 @@
 {
   "name": "siteserver",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "SiteServer CMS 响应式用户交互组件库，采用Sass编写，基于HTML5以及CSS3，完全响应式。",
   "homepage": "https://github.com/siteserver/siteserver-ui",
   "dependencies": {},
   "devDependencies": {
-    "del": "^3.0.0",
+    "del": "^4.1.1",
     "gulp": "^4.0.0",
     "gulp-header": "^2.0.5",
     "gulp-minifier": "^1.2.2",
     "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
-    "gulp-rev": "^7.1.2",
-    "gulp-rev-all": "^0.9.7",
-    "gulp-sass": "^3.1.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-all": "^1.0.0",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4"
   },
   "scripts": {
