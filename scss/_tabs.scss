@@ -11,6 +11,12 @@
   font-weight: 600;
 }
 
+.nav-pills .nav-link {
+  font-weight: normal;
+  border-radius: 1.25rem;
+  font-size: 14px;
+}
+
 .nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
   background-color: $primary;
 }
