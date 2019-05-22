@@ -16,7 +16,6 @@
 @import "modal";
 @import "progressbar";
 @import "tooltips-popover";
-@import "alerts";
 @import "carousel";
 @import "widgets";
 @import "form-elements";
@@ -45,5 +44,5 @@
 @import "responsive";
 
 a.editable {
-border-bottom: dashed 1px #0056b3 !important;
+    border-bottom: dashed 1px #0056b3 !important;
 }
